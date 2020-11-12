@@ -1,0 +1,12 @@
+*{font-size: 15px;}
+body {
+  color: red; }
+
+.js-an, .js-an-1, .js-an-2, .js-an-3, .js-an-4, .js-an-5, .js-an-6, .js-an-7, .js-an-8 {
+  opacity: 0; }
+
+.js-an, .js-an-1, .js-an-2, .js-an-3, .js-an-4, .js-an-5, .js-an-6, .js-an-7, .js-an-8 {
+  -webkit-transform: scale(70);
+          transform: scale(70); }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLmNvbmNhdC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsRUFBRSxlQUFlLENBQUM7QUFDbEI7RUFDRSxVQUFVLEVBQUU7O0FBRWQ7RUFDRSxVQUFVLEVBQUU7O0FBRWQ7RUFDRSw0QkFBb0I7VUFBcEIsb0JBQW9CLEVBQUUiLCJmaWxlIjoic3R5bGUucHJlZml4LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIip7Zm9udC1zaXplOiAxNXB4O31cbmJvZHkge1xuICBjb2xvcjogcmVkOyB9XG5cbi5qcy1hbiwgLmpzLWFuLTEsIC5qcy1hbi0yLCAuanMtYW4tMywgLmpzLWFuLTQsIC5qcy1hbi01LCAuanMtYW4tNiwgLmpzLWFuLTcsIC5qcy1hbi04IHtcbiAgb3BhY2l0eTogMDsgfVxuXG4uanMtYW4sIC5qcy1hbi0xLCAuanMtYW4tMiwgLmpzLWFuLTMsIC5qcy1hbi00LCAuanMtYW4tNSwgLmpzLWFuLTYsIC5qcy1hbi03LCAuanMtYW4tOCB7XG4gIHRyYW5zZm9ybTogc2NhbGUoNzApOyB9XG4iXX0= */

@@ -1,0 +1,8 @@
+body {
+  color: red; }
+
+.js-an, .js-an-1, .js-an-2, .js-an-3, .js-an-4, .js-an-5, .js-an-6, .js-an-7, .js-an-8 {
+  opacity: 0; }
+
+.js-an, .js-an-1, .js-an-2, .js-an-3, .js-an-4, .js-an-5, .js-an-6, .js-an-7, .js-an-8 {
+  transform: scale(70); }
