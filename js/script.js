@@ -80,6 +80,7 @@ function Slider(slider) {
   
   
   ////// Menu itemi 
+  const closeProducts = document.querySelectorAll('.closeProduct');
   const prod = document.querySelectorAll('.header__nav-nav-products');
   let clicked = 0;
   const navlinks = document.querySelectorAll('.navlinks');
@@ -103,28 +104,39 @@ function Slider(slider) {
    }
    else if (clicked === 2){
     // console.log('Usao');
-     if(e.target !== document.querySelector('.openProducts')){
-      // console.log(document.querySelector('.openProducts'));
-      
-      navlinks.forEach(link => link.classList.remove('active'));
-   
-      document.querySelector('.openProducts').classList.remove('openProducts');
+    if(document.querySelector('.openProducts') !== null){
+      if(e.target !== document.querySelector('.openProducts') && !document.querySelector('.openProducts').contains(e.target)){
+        // !document.querySelector('.openProducts').contains(e.target)
+        // console.log(document.querySelector('.openProducts'));
+        // console.log();
+        navlinks.forEach(link => link.classList.remove('active'));
+     
+        document.querySelector('.openProducts').classList.remove('openProducts');
+        clicked = 0;
+       }
+       
+     }
+     
+    }
+    else{
+      document.querySelector('.activeBox').classList.remove('activeBox');
       clicked = 0;
      }
- 
-   }
-   else{
-    document.querySelector('.activeBox').classList.remove('activeBox');
-    clicked = 0;
-   }
   }
  navlinks.forEach(link => link.addEventListener('click', handleNavClick));
+
+ function handleCloseClick(e){
+   e.currentTarget.parentNode.classList.remove('openProducts');
+  //  console.log(e.currentTarget.parentNode.parentNode);
+  //  console.log(e.current);
+ }
+ closeProducts.forEach(closeProd => closeProd.addEventListener('click',handleCloseClick));
 
 
  /////////// Search box
 const searchInput = document.querySelector('.searchInput');
 function handleKeyUp(e){
-  console.log(e.target.value);
+  // console.log(e.target.value);
   const searchBox = document.querySelector('.searchBox');
   if(e.target.value === ''){
     searchBox.classList.remove('activeBox');

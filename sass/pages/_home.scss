@@ -191,7 +191,7 @@
             border: none;
             cursor: pointer;
             box-shadow: 0.2rem 0.4rem 0.7rem rgba($color-black, 0.3);
-            color: $color-white;
+            color: $color-tertiary-light;
             margin-bottom: 0.4rem;
             display: block;
             text-align: center;
@@ -307,8 +307,8 @@
         }
         span {
           position: absolute;
-          top: 0.1rem;
-          left: 0.8rem;
+          top: -0.6rem;
+          left: 2.2rem;
           background-color: $color-tertiary-dark;
           // color: $color-white;
           color: $color-tertiary-light;
@@ -316,6 +316,7 @@
           font-size: 1.3rem;
           border-radius: 50%;
           width: 2rem;
+          // height: 2rem;
           text-align: center;
           // z-index: 1;
           // overflow: hidden;
@@ -388,6 +389,43 @@
           position: absolute;
           bottom: 1rem;
           right: 2rem;
+        }
+        .closeProduct {
+          position: absolute;
+          top: 1rem;
+          right: 1rem;
+          font-family: $font-heading;
+          display: block;
+          background-color: $color-tertiary-light;
+          width: 2.5rem;
+          height: 2.5rem;
+          color: $color-white;
+          cursor: pointer;
+          border-radius: 50%;
+          text-align: center;
+
+          // vertical-align: 5rem;
+        }
+        .closeProduct:after {
+          content: "";
+          height: 2rem;
+          border-left: 2px solid $color-white;
+          position: absolute;
+          transform: rotate(45deg);
+          top: 0.22rem;
+          // left: 1.1rem;
+          // left: 28px;
+        }
+
+        .closeProduct:before {
+          content: "";
+          height: 2rem;
+          border-left: 2px solid $color-white;
+          position: absolute;
+          transform: rotate(-45deg);
+          // left: 28px;
+          top: 0.22rem;
+          // left: 1.1rem;
         }
         &-container {
           display: grid;
