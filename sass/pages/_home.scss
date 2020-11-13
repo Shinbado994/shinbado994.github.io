@@ -5,10 +5,10 @@
     justify-content: space-between;
     margin: 0 auto;
     align-items: center;
-    height: 8rem;
+    height: 10rem;
     &-container {
-      // background-color: $color-tertiary-dark;
-      background-color: $color-white;
+      background-color: $color-tertiary-light;
+      // background-color: $color-white;
     }
     &-logo {
       a:link,
@@ -18,7 +18,7 @@
       }
       img {
         margin-top: 0.8rem;
-        width: 24rem;
+        width: 26rem;
         height: auto;
       }
     }
@@ -44,7 +44,8 @@
           border: 1px solid $color-grey-light-1;
         }
         a {
-          background-color: $color-tertiary-light;
+          // background-color: $color-tertiary-light;
+          background-color: $color-tertiary-dark;
           height: 3.2rem;
           width: 4.8rem;
           border-radius: 0 0.4rem 0.4rem 0;
@@ -58,7 +59,8 @@
           // display: block;
           top: 0.5rem;
           right: 1.3rem;
-          fill: $color-white;
+          // fill: $color-white;
+          fill: $color-tertiary-light;
         }
       }
       .activeBox {
@@ -116,7 +118,8 @@
       svg {
         width: 3.2rem;
         height: 3.2rem;
-        fill: $color-tertiary-light;
+        // fill: $color-tertiary-light;
+        fill: $color-tertiary-dark;
         cursor: pointer;
         overflow: hidden;
         // z-index: 400;
@@ -306,8 +309,9 @@
           position: absolute;
           top: 0.1rem;
           left: 0.8rem;
-          background-color: $color-tertiary-light;
-          color: $color-white;
+          background-color: $color-tertiary-dark;
+          // color: $color-white;
+          color: $color-tertiary-light;
           // padding: 0.4rem;
           font-size: 1.3rem;
           border-radius: 50%;
@@ -439,7 +443,7 @@
           display: flex;
           justify-content: space-between;
           padding: 0.4rem 1.6rem;
-          transition: all 0.4s easy;
+          transition: all 0.4s;
           // pointer-events: all;
           svg {
             width: 2rem;
@@ -612,10 +616,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   width: 3rem;
   height: 3rem;
