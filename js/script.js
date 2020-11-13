@@ -127,6 +127,7 @@ function Slider(slider) {
 
  function handleCloseClick(e){
    e.currentTarget.parentNode.classList.remove('openProducts');
+   navlinks.forEach(link => link.classList.remove('active'));
   //  console.log(e.currentTarget.parentNode.parentNode);
   //  console.log(e.current);
  }

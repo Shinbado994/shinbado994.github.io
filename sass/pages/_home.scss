@@ -18,7 +18,7 @@
       }
       img {
         margin-top: 0.8rem;
-        width: 26rem;
+        width: 32rem;
         height: auto;
       }
     }
@@ -116,8 +116,8 @@
     &-icons {
       display: flex;
       svg {
-        width: 3.2rem;
-        height: 3.2rem;
+        width: 3.6rem;
+        height: 3.6rem;
         // fill: $color-tertiary-light;
         fill: $color-tertiary-dark;
         cursor: pointer;
@@ -308,7 +308,7 @@
         span {
           position: absolute;
           top: -0.6rem;
-          left: 2.2rem;
+          left: 2.8rem;
           background-color: $color-tertiary-dark;
           // color: $color-white;
           color: $color-tertiary-light;
@@ -379,8 +379,8 @@
         top: 0;
         left: 25.3rem;
         background-color: $color-white;
-        width: 90rem;
-        height: 45rem;
+        width: 28rem;
+        // height: 30rem;
         box-shadow: 0.8rem 0.4rem 2rem 0rem rgba($color-black, 0.2);
         display: none;
         text-transform: none;
@@ -428,8 +428,8 @@
           // left: 1.1rem;
         }
         &-container {
-          display: grid;
-          grid-template-columns: repeat(4, 25%);
+          // display: grid;
+          // grid-template-columns: repeat(4, 25%);
         }
         div {
           padding: 0.4rem 0.8rem;
@@ -481,7 +481,11 @@
           display: flex;
           justify-content: space-between;
           padding: 0.4rem 1.6rem;
-          transition: all 0.4s;
+          // transition: border 0.2s, padding 0.2s;
+          border-top: 1px solid transparent;
+          border-bottom: 1px solid transparent;
+          transition: all 0.2s;
+          // backface-visibility: hidden;
           // pointer-events: all;
           svg {
             width: 2rem;
@@ -490,9 +494,10 @@
         a.navlinks:hover {
           border-top: solid 1px rgba($color-black, 0.2);
           border-bottom: solid 1px rgba($color-black, 0.2);
-          padding: 0.3rem 1.2rem;
+          padding: 0.4rem 1.2rem;
           color: $color-tertiary-light;
           background-color: $color-grey-light-2;
+          // transition: border 0.2s, padding 0.4s;
         }
         a.navlinks.active {
           color: $color-grey-light-1;
