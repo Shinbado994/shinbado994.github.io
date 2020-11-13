@@ -561,10 +561,11 @@ body {
         border-top: none;
         border-right: 1.1rem solid transparent;
         border-left: 1.1rem solid transparent;
-        border-bottom: 1.1rem solid #7f1f2c; }
+        border-bottom: 1.1rem solid #fec156; }
     .header__top-icons-cart {
       position: relative; }
-      .header__top-icons-cart .openCart {
+      .header__top-icons-cart .openCart,
+      .header__top-icons-cart .openStar {
         position: absolute;
         width: 25rem;
         left: -15rem;
@@ -573,9 +574,51 @@ body {
         opacity: 0;
         pointer-events: none;
         box-shadow: 0rem -0.3rem 0.7rem rgba(51, 51, 51, 0.16); }
-        .header__top-icons-cart .openCart ul {
+        .header__top-icons-cart .openCart ul,
+        .header__top-icons-cart .openStar ul {
           list-style-type: none; }
-        .header__top-icons-cart .openCart a {
+        .header__top-icons-cart .openCart li,
+        .header__top-icons-cart .openStar li {
+          position: relative;
+          width: 100%; }
+        .header__top-icons-cart .openCart .removeFromCart,
+        .header__top-icons-cart .openStar .removeFromCart {
+          position: absolute;
+          top: 0.8rem;
+          right: 0.5rem;
+          font-family: "Mukta", sans-serif;
+          display: block;
+          background-color: #7f1f2c;
+          width: 2.1rem;
+          height: 2.1rem;
+          color: #fefefe;
+          cursor: pointer;
+          border-radius: 50%;
+          text-align: center;
+          opacity: 0.8;
+          transition: all 0.3s; }
+        .header__top-icons-cart .openCart .removeFromCart:after,
+        .header__top-icons-cart .openStar .removeFromCart:after {
+          content: "";
+          height: 1.6rem;
+          border-left: 2px solid #fefefe;
+          position: absolute;
+          transform: rotate(45deg);
+          top: 0.22rem; }
+        .header__top-icons-cart .openCart .removeFromCart:before,
+        .header__top-icons-cart .openStar .removeFromCart:before {
+          content: "";
+          height: 1.6rem;
+          border-left: 2px solid #fefefe;
+          position: absolute;
+          transform: rotate(-45deg);
+          top: 0.22rem; }
+        .header__top-icons-cart .openCart a.removeFromCart:hover,
+        .header__top-icons-cart .openStar a.removeFromCart:hover {
+          background-color: #7f1f2c;
+          opacity: 1; }
+        .header__top-icons-cart .openCart a,
+        .header__top-icons-cart .openStar a {
           width: 25rem;
           display: flex;
           align-items: center;
@@ -584,13 +627,15 @@ body {
           background-color: #fefefe;
           padding: 0.4rem;
           border-bottom: 0.1rem solid #333333; }
-          .header__top-icons-cart .openCart a img {
+          .header__top-icons-cart .openCart a img,
+          .header__top-icons-cart .openStar a img {
             width: 2.5rem;
             height: 2.5rem;
             margin-right: 0.8rem; }
-        .header__top-icons-cart .openCart li:last-of-type a {
-          background-color: #7f1f2c;
-          color: #fefefe;
+        .header__top-icons-cart .openCart li:last-of-type a,
+        .header__top-icons-cart .openStar li:last-of-type a {
+          background-color: #fec156;
+          color: #7f1f2c;
           border: 0px solid black;
           border-radius: 0rem 0 1rem 1rem;
           display: flex;
@@ -598,12 +643,16 @@ body {
           justify-content: center;
           box-shadow: 0 0.5rem 1rem rgba(51, 51, 51, 0.25); }
         .header__top-icons-cart .openCart a:link,
-        .header__top-icons-cart .openCart a:visited {
+        .header__top-icons-cart .openCart a:visited,
+        .header__top-icons-cart .openStar a:link,
+        .header__top-icons-cart .openStar a:visited {
           text-decoration: none;
           color: #333333; }
-        .header__top-icons-cart .openCart a:hover {
+        .header__top-icons-cart .openCart a:hover,
+        .header__top-icons-cart .openStar a:hover {
           background-color: #e4e4e4; }
-      .header__top-icons-cart .openCart.arrow-top:after {
+      .header__top-icons-cart .openCart.arrow-top:after,
+      .header__top-icons-cart .openStar.arrow-top:after {
         content: " ";
         position: absolute;
         right: 7rem;
@@ -611,7 +660,7 @@ body {
         border-top: none;
         border-right: 1.1rem solid transparent;
         border-left: 1.1rem solid transparent;
-        border-bottom: 1.1rem solid #7f1f2c; }
+        border-bottom: 1.1rem solid #fec156; }
       .header__top-icons-cart .cartActive {
         opacity: 1 !important;
         pointer-events: all;
@@ -634,8 +683,8 @@ body {
         font-size: 1.4rem;
         align-content: center;
         align-items: center;
-        background-color: #7f1f2c;
-        color: #fefefe; }
+        background-color: #fec156;
+        color: #7f1f2c; }
       .header__top-icons-cart .cartActive {
         opacity: 1 !important;
         pointer-events: all; }

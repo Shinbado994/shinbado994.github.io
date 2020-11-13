@@ -175,6 +175,31 @@ cart.addEventListener('mouseout', function(){
  
 });
 
+///// Star
+const star = document.querySelector('.star');
+// console.log(cart);
+function handleStarHover(e){
+  // console.log('to');
+  const openStar = document.querySelector('.openStar');
+  starOver = setTimeout(() => {
+    starOver = openStar.classList.add('cartActive');
+  }, 300);
+  
+  clearInterval(timerStar);
+}
+let timerStar;
+let starOver;
+star.addEventListener('mouseover', handleStarHover);
+star.addEventListener('mouseout', function(){
+  // console.log('123');
+  // document.querySelector('.openCart').classList.remove('cartActive');
+  clearInterval(starOver);
+  timerStar =  setTimeout(function(){document.querySelector('.openStar').classList.remove('cartActive')}, 400);
+  // console.log(timer);
+ 
+});
+
+
 //// User
 let timerUser;
 let userOver;
