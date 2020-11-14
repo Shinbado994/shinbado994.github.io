@@ -81,6 +81,7 @@ function Slider(slider) {
   
   ////// Menu itemi 
   const closeProducts = document.querySelectorAll('.closeProduct');
+  const hamburger = document.querySelector('.hamburger');
   const prod = document.querySelectorAll('.header__nav-nav-products');
   let clicked = 0;
   const navlinks = document.querySelectorAll('.navlinks');
@@ -93,14 +94,21 @@ function Slider(slider) {
     clicked = 1;
     
   }
+  hamburger.addEventListener('click',function(){
+    clicked=3;
+   });
   document.addEventListener('click',handleClickOuside);
   function handleClickOuside(e){
+    const input = document.querySelector('input[type="checkbox"]');
    if(clicked === 0){
+    console.log('too');
     //  console.log('too');
    }
    else if(clicked === 1)
    {
+    
      clicked ++;
+
    }
    else if (clicked === 2){
     // console.log('Usao');
@@ -118,13 +126,23 @@ function Slider(slider) {
      }
      
     }
+    else if(clicked === 3){
+      clicked ++;
+    }
+    else if (clicked === 4){
+      input.checked = false;
+    }
     else{
       document.querySelector('.activeBox').classList.remove('activeBox');
       clicked = 0;
+      
+     
      }
   }
  navlinks.forEach(link => link.addEventListener('click', handleNavClick));
 
+ 
+ 
  function handleCloseClick(e){
    e.currentTarget.parentNode.classList.remove('openProducts');
    navlinks.forEach(link => link.classList.remove('active'));
@@ -269,17 +287,65 @@ $(document).ready(function(){
 });
 
 
-//// Go to top
-$(window).scroll(function() {
-  if ($(this).scrollTop() >= 300) {        // If page is scrolled more than 50px
-      $('#return-to-top').fadeIn(200);    // Fade in the arrow
-  } else {
-      $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+///// Scrolll
+
+function debounce(func, wait = 20, immediate = true){
+  var timeout;
+  return function(){
+    var context = this, args = arguments;
+    var later = function(){
+      timeout = null;
+      if(!immediate) func.apply(context,args);
+    };
+    var callNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(later,wait);
+    if(callNow) func.apply(context,args);
   }
-});
-$('#return-to-top').click(function() {      // When arrow is clicked
-  $('body,html').animate({
-      scrollTop : 0                       // Scroll to top of body
-  }, 1000);
-  
-});
+}
+
+const comeIn = document.querySelector('.comeIn');
+const container = document.querySelector('.header__top-container');
+const headerTop = document.querySelector('.header__top');
+const returnToTop = document.querySelector('.gotop');
+
+
+function comeInFixed(e){
+ 
+  const slideInAt = (window.scrollY + window.innerHeight);
+  comeInBottom = comeIn.offsetTop;
+  const isNotScrolledPast = window.scrollY < 650;
+  // console.log(slideInAt);
+  // console.log(returnToTop);
+  // console.log(isNotScrolledPast);
+  if(!isNotScrolledPast){
+    // document.documentElement.scrollTop = 400;
+    
+    
+    container.classList.add('fixed');
+    headerTop.classList.add('fixed');
+    document.querySelector('.header').style.margin = '100px 0 0 0 ';
+    returnToTop.style.display ="block";
+
+  }
+  else{
+   
+    // setTimeout(function())
+    document.querySelector('.header').style.margin = '0px 0 0 0';
+    container.classList.remove('fixed');
+    headerTop.classList.remove('fixed');
+    returnToTop.style.display ="none";
+  }
+  // console.log(comeIn.offsetTop);
+  // console.log(slideInAt);
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+window.addEventListener('scroll', debounce(comeInFixed,20));
+returnToTop.addEventListener('click', topFunction);
+// window.addEventListener('scroll', comeInFixed);
+
+

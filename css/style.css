@@ -392,6 +392,64 @@ body {
   border-top: 1.15rem solid transparent;
   border-bottom: 1.15rem solid transparent; }
 
+.hamburger {
+  display: none;
+  position: absolute;
+  top: 2rem;
+  left: 2.5rem;
+  z-index: 9999; }
+
+.hamburger input {
+  display: block;
+  width: 3rem;
+  height: 3.2rem;
+  position: absolute;
+  top: -0.7rem;
+  left: -0.4rem;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 33;
+  -webkit-touch-callout: none; }
+
+.hamburger span {
+  display: block;
+  width: 2.5rem;
+  height: 0.3rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  background: #fec156;
+  border-radius: 0.3rem;
+  z-index: 1;
+  transform-origin: 0.4rem 0px;
+  transition: transform 0.5s cubic-bezier(0.67, 0.3, 0.05, 1); }
+
+.hamburger span:first-child {
+  transform-origin: 0% 0%; }
+
+.hamburger span:nth-last-child(1) {
+  transform-origin: 0% 100%; }
+
+.hamburger input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(0.2rem, 0.1rem);
+  background: #fec156; }
+
+.hamburger input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2); }
+
+.hamburger input:checked ~ span:nth-last-child(2) {
+  opacity: 1;
+  transform: rotate(-45deg) translate(0rem, -0.2rem); }
+
+/*
+   * And let's fade it in from the left
+   */
+.hamburger input:checked ~ .header__nav {
+  transform: none;
+  opacity: 1;
+  pointer-events: all; }
+
 .header__top {
   width: 120rem;
   display: flex;
@@ -562,6 +620,26 @@ body {
         border-right: 1.1rem solid transparent;
         border-left: 1.1rem solid transparent;
         border-bottom: 1.1rem solid #fec156; }
+    .header__top-icons .cart span {
+      position: absolute;
+      top: -0.6rem;
+      left: 2.8rem;
+      background-color: #fec156;
+      color: #7f1f2c;
+      font-size: 1.3rem;
+      border-radius: 50%;
+      width: 2rem;
+      text-align: center; }
+    .header__top-icons .star span {
+      position: absolute;
+      top: -0.6rem;
+      left: 2.2rem;
+      background-color: #fec156;
+      color: #7f1f2c;
+      font-size: 1.3rem;
+      border-radius: 50%;
+      width: 2rem;
+      text-align: center; }
     .header__top-icons-cart {
       position: relative; }
       .header__top-icons-cart .openCart,
@@ -666,16 +744,6 @@ body {
         pointer-events: all;
         transition: all 0.4s;
         z-index: 10000; }
-      .header__top-icons-cart span {
-        position: absolute;
-        top: -0.6rem;
-        left: 2.8rem;
-        background-color: #fec156;
-        color: #7f1f2c;
-        font-size: 1.3rem;
-        border-radius: 50%;
-        width: 2rem;
-        text-align: center; }
       .header__top-icons-cart-price {
         padding: 0.4rem 0.8rem;
         display: flex;
@@ -688,6 +756,71 @@ body {
       .header__top-icons-cart .cartActive {
         opacity: 1 !important;
         pointer-events: all; }
+
+.header .header__top-container.fixed {
+  width: 100%;
+  height: 6rem;
+  position: fixed;
+  top: 0;
+  z-index: 100000;
+  animation: mymove 0.4s ease-in-out; }
+
+@keyframes mymove {
+  from {
+    top: -8rem; }
+  to {
+    top: 0rem; } }
+
+.header__top.fixed {
+  opacity: 1;
+  top: 0;
+  height: 6rem;
+  z-index: 100; }
+  .header__top.fixed .hamburger {
+    display: block; }
+  .header__top.fixed .header__nav {
+    transition: all 0.5s cubic-bezier(0.67, 0.3, 0.05, 1);
+    opacity: 0;
+    pointer-events: none; }
+  .header__top.fixed .header__nav-nav-navbar {
+    right: auto;
+    left: -2.5rem; }
+  .header__top.fixed .logoImg {
+    margin-top: 1.9rem;
+    width: 25rem; }
+  .header__top.fixed .cart svg,
+  .header__top.fixed .user svg,
+  .header__top.fixed .star svg {
+    width: 3.4rem;
+    height: 3.4rem; }
+  .header__top.fixed .cart span {
+    position: absolute;
+    top: -0.6rem;
+    left: 2.5rem;
+    background-color: #fec156;
+    color: #7f1f2c;
+    font-size: 1.3rem;
+    border-radius: 50%;
+    width: 1.8rem;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    text-align: center; }
+  .header__top.fixed .star span {
+    position: absolute;
+    top: -0.6rem;
+    left: 2rem;
+    background-color: #fec156;
+    color: #7f1f2c;
+    font-size: 1.3rem;
+    border-radius: 50%;
+    width: 1.8rem;
+    height: 1.8rem;
+    text-align: center;
+    line-height: 1.8rem; }
+  .header__top.fixed .closeProduct:after {
+    left: 1.2rem; }
+  .header__top.fixed .closeProduct:before {
+    left: 1.2rem; }
 
 .header__nav {
   background-color: #e4e4e4; }
