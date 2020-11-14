@@ -784,7 +784,8 @@ body {
     pointer-events: none; }
   .header__top.fixed .header__nav-nav-navbar {
     right: auto;
-    left: -2.5rem; }
+    left: -2.5rem;
+    top: 5rem; }
   .header__top.fixed .logoImg {
     margin-top: 1.9rem;
     width: 26rem;
