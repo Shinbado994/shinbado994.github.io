@@ -629,7 +629,7 @@ body {
     color: #7f1f2c; }
   .header__top-logo img {
     margin-top: 0.8rem;
-    width: 32rem;
+    width: 29rem;
     height: auto; }
   .header__top-search-container {
     position: relative;
@@ -994,7 +994,7 @@ body {
     width: 120rem;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 23% 77%;
+    grid-template-columns: 24% 76%;
     align-content: center;
     align-items: center;
     height: 4rem; }
@@ -1095,7 +1095,7 @@ body {
       z-index: 1000; }
       .header__nav-nav-navbar ul {
         list-style-type: none;
-        width: 25.3rem; }
+        width: 26.4rem; }
       .header__nav-nav-navbar a.navlinks:link,
       .header__nav-nav-navbar a.navlinks:visited {
         text-decoration: none;
