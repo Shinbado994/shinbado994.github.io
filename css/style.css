@@ -595,7 +595,8 @@ body {
   border: 0.1rem solid transparent;
   border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
   cursor: pointer;
-  user-select: none; }
+  user-select: none;
+  background-color: #eee; }
 
 /*style items (options):*/
 .select-items {
