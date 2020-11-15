@@ -1303,13 +1303,19 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1.2rem; }
+    margin-bottom: 1.2rem;
+    margin-right: 2rem; }
     .categoryProducts__products-top p {
       font-size: 1.5rem; }
   .categoryProducts__products-grid {
     display: grid;
     grid-template-columns: repeat(3, 33%);
-    row-gap: 1.8rem; }
+    row-gap: 1.8rem;
+    justify-items: center; }
     .categoryProducts__products-grid .product {
       margin: 0;
-      text-align: center; }
+      text-align: center;
+      width: 27rem; }
+      .categoryProducts__products-grid .product img {
+        width: 25rem;
+        height: auto; }

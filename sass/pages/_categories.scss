@@ -79,6 +79,7 @@
       align-items: center;
       //   align-content: center;
       margin-bottom: 1.2rem;
+      margin-right: 2rem;
       p {
         font-size: 1.5rem;
       }
@@ -88,14 +89,17 @@
       display: grid;
       grid-template-columns: repeat(3, 33%);
       row-gap: 1.8rem;
+      //   align-content: center;
+      justify-items: center;
+      //   align
       //   column-gap: 3rem;
       .product {
         margin: 0;
         text-align: center;
-        // width: 22rem;
+        width: 27rem;
         img {
-          //   width: 20rem;
-          //   height: auto;
+          width: 25rem;
+          height: auto;
         }
       }
     }
