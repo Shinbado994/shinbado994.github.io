@@ -773,12 +773,7 @@
               <div></div>
             </div> -->
             <div class="hamburger">
-              <input
-                type="checkbox"
-                checked
-                name="checkMenu"
-                class="checkMenu"
-              />
+              <input type="checkbox" />
               <span></span>
               <span></span>
               <span></span>
@@ -796,7 +791,7 @@
                       </a>
                       <div class="header__nav-nav-products">
                         <span class="closeProduct"> </span>
-                        <p><a href="categories.html">Svi Prvi Itemi</a></p>
+                        <p><a href="#">Svi Prvi Itemi</a></p>
                         <div class="header__nav-nav-products-container">
                           <div>
                             <ul>
@@ -1286,6 +1281,7 @@
               </div>
             </div>
             <p class="openHamburgerRight">Proizvodi</p>
+            <div class="header__nav-nav-navbar"></div>
           </div>
           <div class="header__nav-links">
             <div class="header__nav-phone">
@@ -1305,60 +1301,679 @@
           </div>
         </div>
       </div>
-      <div class="header__slider slider">
-        <div class="header__slider-left">
-          <svg class="header__top-search goToPrev">
-            <use xlink:href="img/sprite.svg#icon-navigate_before"></use>
-          </svg>
+    </div>
+    <div class="breadcrumbs">
+      <div class="breadcrumbs__container">
+        <ul>
+          <li><a href=""> Pocetna </a></li>
+          <li><a href=""> Kategorija 1 </a></li>
+          <li>Tu smo</li>
+        </ul>
+        <h1>Kategorija 1</h1>
+      </div>
+    </div>
+
+    <div class="categoryProducts">
+      <div class="categoryProducts__container">
+        <div class="categoryProducts__filters">
+          <fieldset>
+            <legend>Kategorije:</legend>
+
+            <div class="cntr">
+              <label for="cbx" class="label-cbx">
+                <input id="cbx" type="checkbox" class="invisible" />
+                <span class="checkbox">
+                  <svg width="18px" height="18px" viewBox="0 0 20 20">
+                    <path
+                      d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z"
+                    ></path>
+                    <polyline points="4 11 8 15 16 6"></polyline>
+                  </svg>
+                </span>
+                <span>Prva Podkategorija </span>
+              </label>
+            </div>
+            <div class="cntr">
+              <label for="cbx1" class="label-cbx">
+                <input id="cbx1" type="checkbox" class="invisible" />
+                <span class="checkbox">
+                  <svg width="18px" height="18px" viewBox="0 0 20 20">
+                    <path
+                      d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z"
+                    ></path>
+                    <polyline points="4 11 8 15 16 6"></polyline>
+                  </svg>
+                </span>
+                <span>Treca Podkategorija </span>
+              </label>
+            </div>
+            <div class="cntr">
+              <label for="cbx5" class="label-cbx">
+                <input id="cbx5" type="checkbox" class="invisible" />
+                <span class="checkbox">
+                  <svg width="18px" height="18px" viewBox="0 0 20 20">
+                    <path
+                      d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z"
+                    ></path>
+                    <polyline points="4 11 8 15 16 6"></polyline>
+                  </svg>
+                </span>
+                <span>Osma Podkategorija </span>
+              </label>
+            </div>
+            <div class="cntr">
+              <label for="cbx4" class="label-cbx">
+                <input id="cbx4" type="checkbox" class="invisible" />
+                <span class="checkbox">
+                  <svg width="18px" height="18px" viewBox="0 0 20 20">
+                    <path
+                      d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z"
+                    ></path>
+                    <polyline points="4 11 8 15 16 6"></polyline>
+                  </svg>
+                </span>
+                <span>Druga Podkategorija </span>
+              </label>
+            </div>
+            <div class="cntr">
+              <label for="cbx2" class="label-cbx">
+                <input id="cbx2" type="checkbox" class="invisible" />
+                <span class="checkbox">
+                  <svg width="18px" height="18px" viewBox="0 0 20 20">
+                    <path
+                      d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z"
+                    ></path>
+                    <polyline points="4 11 8 15 16 6"></polyline>
+                  </svg>
+                </span>
+                <span>Treca Podkategorija </span>
+              </label>
+            </div>
+            <div class="cntr">
+              <label for="cbx3" class="label-cbx">
+                <input id="cbx3" type="checkbox" class="invisible" />
+                <span class="checkbox">
+                  <svg width="18px" height="18px" viewBox="0 0 20 20">
+                    <path
+                      d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z"
+                    ></path>
+                    <polyline points="4 11 8 15 16 6"></polyline>
+                  </svg>
+                </span>
+                <span>Cetvrta Podkategorija </span>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Cene:</legend>
+
+            <div class="cntr">
+              <label for="cbxc22" class="label-cbx">
+                <input id="cbxc22" type="checkbox" class="invisible" />
+                <span class="checkbox">
+                  <svg width="18px" height="18px" viewBox="0 0 20 20">
+                    <path
+                      d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z"
+                    ></path>
+                    <polyline points="4 11 8 15 16 6"></polyline>
+                  </svg>
+                </span>
+                <span>0 - 10 </span>
+              </label>
+            </div>
+            <div class="cntr">
+              <label for="cbxc11" class="label-cbx">
+                <input id="cbxc11" type="checkbox" class="invisible" />
+                <span class="checkbox">
+                  <svg width="18px" height="18px" viewBox="0 0 20 20">
+                    <path
+                      d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z"
+                    ></path>
+                    <polyline points="4 11 8 15 16 6"></polyline>
+                  </svg>
+                </span>
+                <span>10 - 19 </span>
+              </label>
+            </div>
+            <div class="cntr">
+              <label for="cbxc5" class="label-cbx">
+                <input id="cbxc5" type="checkbox" class="invisible" />
+                <span class="checkbox">
+                  <svg width="18px" height="18px" viewBox="0 0 20 20">
+                    <path
+                      d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z"
+                    ></path>
+                    <polyline points="4 11 8 15 16 6"></polyline>
+                  </svg>
+                </span>
+                <span>20 - 29 </span>
+              </label>
+            </div>
+            <div class="cntr">
+              <label for="cbxc4" class="label-cbx">
+                <input id="cbxc4" type="checkbox" class="invisible" />
+                <span class="checkbox">
+                  <svg width="18px" height="18px" viewBox="0 0 20 20">
+                    <path
+                      d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z"
+                    ></path>
+                    <polyline points="4 11 8 15 16 6"></polyline>
+                  </svg>
+                </span>
+                <span>30 - 39</span>
+              </label>
+            </div>
+            <div class="cntr">
+              <label for="cbxc2" class="label-cbx">
+                <input id="cbxc2" type="checkbox" class="invisible" />
+                <span class="checkbox">
+                  <svg width="18px" height="18px" viewBox="0 0 20 20">
+                    <path
+                      d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z"
+                    ></path>
+                    <polyline points="4 11 8 15 16 6"></polyline>
+                  </svg>
+                </span>
+                <span>40 - 49 </span>
+              </label>
+            </div>
+            <div class="cntr">
+              <label for="cbxc1" class="label-cbx">
+                <input id="cbxc1" type="checkbox" class="invisible" />
+                <span class="checkbox">
+                  <svg width="18px" height="18px" viewBox="0 0 20 20">
+                    <path
+                      d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z"
+                    ></path>
+                    <polyline points="4 11 8 15 16 6"></polyline>
+                  </svg>
+                </span>
+                <span>50 - 100</span>
+              </label>
+            </div>
+          </fieldset>
         </div>
-        <div class="header__slider-right">
-          <svg class="header__top-search goToNext">
-            <use xlink:href="img/sprite.svg#icon-navigate_next"></use>
-          </svg>
-        </div>
-        <div class="slides">
-          <div class="slide current">
-            <img src="img/kit.jpg" alt="Pozadina" class="backgroundimage" />
-            <div class="info">
-              <img src="img/naslov.png" alt="Pozadina" class="naslov" />
-              <img src="img/grupna.png" alt="grejna" class="grupna" />
+        <div class="categoryProducts__products">
+          <div class="categoryProducts__products-top">
+            <p>Prikaz 1 - 40 od 71</p>
+            <div class="custom-select">
+              <select>
+                <option value="0">Sortiraj po</option>
+                <option value="1">Ceni opadajuce</option>
+                <option value="2">Ceni rastuce</option>
+                <option value="3">Nesto trece</option>
+              </select>
             </div>
           </div>
-          <div class="slide">
-            <img
-              src="img/background2.jpg"
-              alt="Pozadina"
-              class="backgroundimage"
-            />
-            <div class="info">
-              <img src="img/meda.png" alt="Pozadina" class="meda" />
-              <img src="img/grejnatehnika.png" alt="grejna" class="grejna" />
-              <img src="img/nesto.png" alt="Pozadina" class="nesto" />
-              <img src="img/radijator.png" alt="grejna" class="radijator" />
+
+          <div class="categoryProducts__products-grid">
+            <div class="product">
+              <div class="product-discounts">
+                <div class="pointer">
+                  <span>Akcija </span>
+                </div>
+                <div class="discount">
+                  <span>20% </span>
+                </div>
+              </div>
+
+              <div class="product-img u-margin-bottom-sm">
+                <a href="#" class="button btnMore">Detaljnije</a>
+                <a href="#" class="product-img-svg">
+                  <span>
+                    <svg class="product_svg">
+                      <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                </a>
+                <a href="#" class="product-img-image"
+                  ><img src="/img/product.jpg" alt=""
+                /></a>
+              </div>
+
+              <p class="product-name u-margin-bottom-sm">
+                <a href="#">Sony Bluetooth zvučnik</a>
+              </p>
+
+              <span class="product-lineThrough u-margin-bottom-sm">
+                <span class="product-oldPrice">4.999 DIN</span>
+              </span>
+
+              <p class="product-newPrice u-margin-bottom-sm">3.856 DIN</p>
+              <a class="button u-margin-bottom-sm" href="#">
+                <svg class="product_svg">
+                  <use xlink:href="img/sprite.svg#icon-cart2"></use>
+                </svg>
+                <span>Dodaj u korpu</span>
+              </a>
             </div>
-          </div>
-          <div class="slide">
-            <img
-              src="img/background1.jpg"
-              alt="Pozadina"
-              class="backgroundimage"
-            />
-            <div class="info">
-              <img src="img/naslov.png" alt="Pozadina" class="naslov" />
-              <img src="img/grupna.png" alt="grejna" class="grupna" />
+            <div class="product">
+              <div class="product-discounts">
+                <div class="pointer">
+                  <span>Akcija </span>
+                </div>
+              </div>
+
+              <div class="product-img u-margin-bottom-sm">
+                <a href="#" class="button btnMore">Detaljnije</a>
+                <a href="#" class="product-img-svg product-img-svg-active">
+                  <span>
+                    <svg class="product_svg">
+                      <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                </a>
+                <a href="#" class="product-img-image"
+                  ><img src="/img/product.jpg" alt=""
+                /></a>
+              </div>
+
+              <p class="product-name u-margin-bottom-sm">
+                <a href="#">Sony Bluetooth zvučnik</a>
+              </p>
+
+              <span class="product-lineThrough u-margin-bottom-sm">
+                <span class="product-oldPrice">4.999 DIN</span>
+              </span>
+
+              <p class="product-newPrice u-margin-bottom-sm">3.856 DIN</p>
+              <a class="button u-margin-bottom-sm" href="#">
+                <svg class="product_svg">
+                  <use xlink:href="img/sprite.svg#icon-cart2"></use>
+                </svg>
+                <span>Dodaj u korpu</span>
+              </a>
             </div>
-          </div>
-          <div class="slide">
-            <img
-              src="img/background2.jpg"
-              alt="Pozadina"
-              class="backgroundimage"
-            />
-            <div class="info">
-              <img src="img/meda.png" alt="Pozadina" class="meda" />
-              <img src="img/grejnatehnika.png" alt="grejna" class="grejna" />
-              <img src="img/nesto.png" alt="Pozadina" class="nesto" />
-              <img src="img/radijator.png" alt="grejna" class="radijator" />
+            <div class="product">
+              <div class="product-discounts">
+                <div class="pointer">
+                  <span>Akcija </span>
+                </div>
+                <div class="discount">
+                  <span>20% </span>
+                </div>
+              </div>
+
+              <div class="product-img u-margin-bottom-sm">
+                <a href="#" class="button btnMore">Detaljnije</a>
+                <a href="#" class="product-img-svg">
+                  <span>
+                    <svg class="product_svg">
+                      <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                </a>
+                <a href="#" class="product-img-image"
+                  ><img src="/img/product.jpg" alt=""
+                /></a>
+              </div>
+
+              <p class="product-name u-margin-bottom-sm">
+                <a href="#">Sony Bluetooth zvučnik</a>
+              </p>
+
+              <span class="product-lineThrough u-margin-bottom-sm">
+                <span class="product-oldPrice">4.999 DIN</span>
+              </span>
+
+              <p class="product-newPrice u-margin-bottom-sm">3.856 DIN</p>
+              <a class="button u-margin-bottom-sm" href="#">
+                <svg class="product_svg">
+                  <use xlink:href="img/sprite.svg#icon-cart2"></use>
+                </svg>
+                <span>Dodaj u korpu</span>
+              </a>
+            </div>
+            <div class="product">
+              <div class="product-discounts">
+                <div class="pointer">
+                  <span>Akcija </span>
+                </div>
+                <div class="discount">
+                  <span>20% </span>
+                </div>
+              </div>
+
+              <div class="product-img u-margin-bottom-sm">
+                <a href="#" class="button btnMore">Detaljnije</a>
+                <a href="#" class="product-img-svg">
+                  <span>
+                    <svg class="product_svg">
+                      <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                </a>
+                <a href="#" class="product-img-image"
+                  ><img src="/img/product.jpg" alt=""
+                /></a>
+              </div>
+
+              <p class="product-name u-margin-bottom-sm">
+                <a href="#">Sony Bluetooth zvučnik</a>
+              </p>
+
+              <span class="product-lineThrough u-margin-bottom-sm">
+                <span class="product-oldPrice">4.999 DIN</span>
+              </span>
+
+              <p class="product-newPrice u-margin-bottom-sm">3.856 DIN</p>
+              <a class="button u-margin-bottom-sm" href="#">
+                <svg class="product_svg">
+                  <use xlink:href="img/sprite.svg#icon-cart2"></use>
+                </svg>
+                <span>Dodaj u korpu</span>
+              </a>
+            </div>
+            <div class="product">
+              <div class="product-discounts">
+                <div class="pointer">
+                  <span>Akcija </span>
+                </div>
+              </div>
+
+              <div class="product-img u-margin-bottom-sm">
+                <a href="#" class="button btnMore">Detaljnije</a>
+                <a href="#" class="product-img-svg product-img-svg-active">
+                  <span>
+                    <svg class="product_svg">
+                      <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                </a>
+                <a href="#" class="product-img-image"
+                  ><img src="/img/product.jpg" alt=""
+                /></a>
+              </div>
+
+              <p class="product-name u-margin-bottom-sm">
+                <a href="#">Sony Bluetooth zvučnik</a>
+              </p>
+
+              <span class="product-lineThrough u-margin-bottom-sm">
+                <span class="product-oldPrice">4.999 DIN</span>
+              </span>
+
+              <p class="product-newPrice u-margin-bottom-sm">3.856 DIN</p>
+              <a class="button u-margin-bottom-sm" href="#">
+                <svg class="product_svg">
+                  <use xlink:href="img/sprite.svg#icon-cart2"></use>
+                </svg>
+                <span>Dodaj u korpu</span>
+              </a>
+            </div>
+            <div class="product">
+              <div class="product-discounts">
+                <div class="pointer">
+                  <span>Akcija </span>
+                </div>
+                <div class="discount">
+                  <span>20% </span>
+                </div>
+              </div>
+
+              <div class="product-img u-margin-bottom-sm">
+                <a href="#" class="button btnMore">Detaljnije</a>
+                <a href="#" class="product-img-svg">
+                  <span>
+                    <svg class="product_svg">
+                      <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                </a>
+                <a href="#" class="product-img-image"
+                  ><img src="/img/product.jpg" alt=""
+                /></a>
+              </div>
+
+              <p class="product-name u-margin-bottom-sm">
+                <a href="#">Sony Bluetooth zvučnik</a>
+              </p>
+
+              <span class="product-lineThrough u-margin-bottom-sm">
+                <span class="product-oldPrice">4.999 DIN</span>
+              </span>
+
+              <p class="product-newPrice u-margin-bottom-sm">3.856 DIN</p>
+              <a class="button u-margin-bottom-sm" href="#">
+                <svg class="product_svg">
+                  <use xlink:href="img/sprite.svg#icon-cart2"></use>
+                </svg>
+                <span>Dodaj u korpu</span>
+              </a>
+            </div>
+            <div class="product">
+              <div class="product-discounts">
+                <div class="pointer">
+                  <span>Akcija </span>
+                </div>
+                <div class="discount">
+                  <span>20% </span>
+                </div>
+              </div>
+
+              <div class="product-img u-margin-bottom-sm">
+                <a href="#" class="button btnMore">Detaljnije</a>
+                <a href="#" class="product-img-svg">
+                  <span>
+                    <svg class="product_svg">
+                      <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                </a>
+                <a href="#" class="product-img-image"
+                  ><img src="/img/product.jpg" alt=""
+                /></a>
+              </div>
+
+              <p class="product-name u-margin-bottom-sm">
+                <a href="#">Sony Bluetooth zvučnik</a>
+              </p>
+
+              <span class="product-lineThrough u-margin-bottom-sm">
+                <span class="product-oldPrice">4.999 DIN</span>
+              </span>
+
+              <p class="product-newPrice u-margin-bottom-sm">3.856 DIN</p>
+              <a class="button u-margin-bottom-sm" href="#">
+                <svg class="product_svg">
+                  <use xlink:href="img/sprite.svg#icon-cart2"></use>
+                </svg>
+                <span>Dodaj u korpu</span>
+              </a>
+            </div>
+            <div class="product">
+              <div class="product-discounts">
+                <div class="pointer">
+                  <span>Akcija </span>
+                </div>
+              </div>
+
+              <div class="product-img u-margin-bottom-sm">
+                <a href="#" class="button btnMore">Detaljnije</a>
+                <a href="#" class="product-img-svg product-img-svg-active">
+                  <span>
+                    <svg class="product_svg">
+                      <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                </a>
+                <a href="#" class="product-img-image"
+                  ><img src="/img/product.jpg" alt=""
+                /></a>
+              </div>
+
+              <p class="product-name u-margin-bottom-sm">
+                <a href="#">Sony Bluetooth zvučnik</a>
+              </p>
+
+              <span class="product-lineThrough u-margin-bottom-sm">
+                <span class="product-oldPrice">4.999 DIN</span>
+              </span>
+
+              <p class="product-newPrice u-margin-bottom-sm">3.856 DIN</p>
+              <a class="button u-margin-bottom-sm" href="#">
+                <svg class="product_svg">
+                  <use xlink:href="img/sprite.svg#icon-cart2"></use>
+                </svg>
+                <span>Dodaj u korpu</span>
+              </a>
+            </div>
+            <div class="product">
+              <div class="product-discounts">
+                <div class="pointer">
+                  <span>Akcija </span>
+                </div>
+                <div class="discount">
+                  <span>20% </span>
+                </div>
+              </div>
+
+              <div class="product-img u-margin-bottom-sm">
+                <a href="#" class="button btnMore">Detaljnije</a>
+                <a href="#" class="product-img-svg">
+                  <span>
+                    <svg class="product_svg">
+                      <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                </a>
+                <a href="#" class="product-img-image"
+                  ><img src="/img/product.jpg" alt=""
+                /></a>
+              </div>
+
+              <p class="product-name u-margin-bottom-sm">
+                <a href="#">Sony Bluetooth zvučnik</a>
+              </p>
+
+              <span class="product-lineThrough u-margin-bottom-sm">
+                <span class="product-oldPrice">4.999 DIN</span>
+              </span>
+
+              <p class="product-newPrice u-margin-bottom-sm">3.856 DIN</p>
+              <a class="button u-margin-bottom-sm" href="#">
+                <svg class="product_svg">
+                  <use xlink:href="img/sprite.svg#icon-cart2"></use>
+                </svg>
+                <span>Dodaj u korpu</span>
+              </a>
+            </div>
+            <div class="product">
+              <div class="product-discounts">
+                <div class="pointer">
+                  <span>Akcija </span>
+                </div>
+                <div class="discount">
+                  <span>20% </span>
+                </div>
+              </div>
+
+              <div class="product-img u-margin-bottom-sm">
+                <a href="#" class="button btnMore">Detaljnije</a>
+                <a href="#" class="product-img-svg">
+                  <span>
+                    <svg class="product_svg">
+                      <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                </a>
+                <a href="#" class="product-img-image"
+                  ><img src="/img/product.jpg" alt=""
+                /></a>
+              </div>
+
+              <p class="product-name u-margin-bottom-sm">
+                <a href="#">Sony Bluetooth zvučnik</a>
+              </p>
+
+              <span class="product-lineThrough u-margin-bottom-sm">
+                <span class="product-oldPrice">4.999 DIN</span>
+              </span>
+
+              <p class="product-newPrice u-margin-bottom-sm">3.856 DIN</p>
+              <a class="button u-margin-bottom-sm" href="#">
+                <svg class="product_svg">
+                  <use xlink:href="img/sprite.svg#icon-cart2"></use>
+                </svg>
+                <span>Dodaj u korpu</span>
+              </a>
+            </div>
+            <div class="product">
+              <div class="product-discounts">
+                <div class="pointer">
+                  <span>Akcija </span>
+                </div>
+              </div>
+
+              <div class="product-img u-margin-bottom-sm">
+                <a href="#" class="button btnMore">Detaljnije</a>
+                <a href="#" class="product-img-svg product-img-svg-active">
+                  <span>
+                    <svg class="product_svg">
+                      <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                </a>
+                <a href="#" class="product-img-image"
+                  ><img src="/img/product.jpg" alt=""
+                /></a>
+              </div>
+
+              <p class="product-name u-margin-bottom-sm">
+                <a href="#">Sony Bluetooth zvučnik</a>
+              </p>
+
+              <span class="product-lineThrough u-margin-bottom-sm">
+                <span class="product-oldPrice">4.999 DIN</span>
+              </span>
+
+              <p class="product-newPrice u-margin-bottom-sm">3.856 DIN</p>
+              <a class="button u-margin-bottom-sm" href="#">
+                <svg class="product_svg">
+                  <use xlink:href="img/sprite.svg#icon-cart2"></use>
+                </svg>
+                <span>Dodaj u korpu</span>
+              </a>
+            </div>
+            <div class="product">
+              <div class="product-discounts">
+                <div class="pointer">
+                  <span>Akcija </span>
+                </div>
+                <div class="discount">
+                  <span>20% </span>
+                </div>
+              </div>
+
+              <div class="product-img u-margin-bottom-sm">
+                <a href="#" class="button btnMore">Detaljnije</a>
+                <a href="#" class="product-img-svg">
+                  <span>
+                    <svg class="product_svg">
+                      <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </span>
+                </a>
+                <a href="#" class="product-img-image"
+                  ><img src="/img/product.jpg" alt=""
+                /></a>
+              </div>
+
+              <p class="product-name u-margin-bottom-sm">
+                <a href="#">Sony Bluetooth zvučnik</a>
+              </p>
+
+              <span class="product-lineThrough u-margin-bottom-sm">
+                <span class="product-oldPrice">4.999 DIN</span>
+              </span>
+
+              <p class="product-newPrice u-margin-bottom-sm">3.856 DIN</p>
+              <a class="button u-margin-bottom-sm" href="#">
+                <svg class="product_svg">
+                  <use xlink:href="img/sprite.svg#icon-cart2"></use>
+                </svg>
+                <span>Dodaj u korpu</span>
+              </a>
             </div>
           </div>
         </div>
@@ -1367,894 +1982,6 @@
     <!-- <div class="main">
         123
     </div> -->
-
-    <div class="products u-margin-top-big">
-      <h2 class="comeIn">Izdvajamo</h2>
-      <div class="products__container slideSlick">
-        <div class="sliderPele">
-          <div class="product">
-            <div class="product-discounts">
-              <div class="pointer">
-                <span>Akcija </span>
-              </div>
-              <div class="discount">
-                <span>20% </span>
-              </div>
-            </div>
-
-            <div class="product-img u-margin-bottom-sm">
-              <a href="#" class="button btnMore">Detaljnije</a>
-              <a href="#" class="product-img-svg">
-                <span>
-                  <svg class="product_svg">
-                    <use xlink:href="img/sprite.svg#icon-star-full"></use>
-                  </svg>
-                </span>
-              </a>
-              <a href="#" class="product-img-image"
-                ><img src="/img/product.jpg" alt=""
-              /></a>
-            </div>
-
-            <p class="product-name u-margin-bottom-sm">
-              <a href="#">Sony Bluetooth zvučnik</a>
-            </p>
-
-            <span class="product-lineThrough u-margin-bottom-sm">
-              <span class="product-oldPrice">4.999 DIN</span>
-            </span>
-
-            <p class="product-newPrice u-margin-bottom-sm">3.856 DIN</p>
-            <a class="button u-margin-bottom-sm" href="#">
-              <svg class="product_svg">
-                <use xlink:href="img/sprite.svg#icon-cart2"></use>
-              </svg>
-              <span>Dodaj u korpu</span>
-            </a>
-          </div>
-        </div>
-        <div class="sliderPele">
-          <div class="product">
-            <div class="product-discounts">
-              <div class="pointer">
-                <span>Akcija </span>
-              </div>
-            </div>
-
-            <div class="product-img u-margin-bottom-sm">
-              <a href="#" class="button btnMore">Detaljnije</a>
-              <a href="#" class="product-img-svg product-img-svg-active">
-                <span>
-                  <svg class="product_svg">
-                    <use xlink:href="img/sprite.svg#icon-star-full"></use>
-                  </svg>
-                </span>
-              </a>
-              <a href="#" class="product-img-image"
-                ><img src="/img/product.jpg" alt=""
-              /></a>
-            </div>
-
-            <p class="product-name u-margin-bottom-sm">
-              <a href="#">Sony Bluetooth zvučnik</a>
-            </p>
-
-            <span class="product-lineThrough u-margin-bottom-sm">
-              <span class="product-oldPrice">4.999 DIN</span>
-            </span>
-
-            <p class="product-newPrice u-margin-bottom-sm">3.856 DIN</p>
-            <a class="button u-margin-bottom-sm" href="#">
-              <svg class="product_svg">
-                <use xlink:href="img/sprite.svg#icon-cart2"></use>
-              </svg>
-              <span>Dodaj u korpu</span>
-            </a>
-          </div>
-        </div>
-        <div class="sliderPele">
-          <div class="product">
-            <div class="product-discounts">
-              <div class="pointer">
-                <span>Akcija </span>
-              </div>
-              <div class="discount">
-                <span>20% </span>
-              </div>
-            </div>
-
-            <div class="product-img u-margin-bottom-sm">
-              <a href="#" class="button btnMore">Detaljnije</a>
-              <a href="#" class="product-img-svg">
-                <span>
-                  <svg class="product_svg">
-                    <use xlink:href="img/sprite.svg#icon-star-full"></use>
-                  </svg>
-                </span>
-              </a>
-              <a href="#" class="product-img-image"
-                ><img src="/img/product.jpg" alt=""
-              /></a>
-            </div>
-
-            <p class="product-name u-margin-bottom-sm">
-              <a href="#">Sony Bluetooth zvučnik</a>
-            </p>
-
-            <span class="product-lineThrough u-margin-bottom-sm">
-              <span class="product-oldPrice">4.999 DIN</span>
-            </span>
-
-            <p class="product-newPrice u-margin-bottom-sm">3.856 DIN</p>
-            <a class="button u-margin-bottom-sm" href="#">
-              <svg class="product_svg">
-                <use xlink:href="img/sprite.svg#icon-cart2"></use>
-              </svg>
-              <span>Dodaj u korpu</span>
-            </a>
-          </div>
-        </div>
-        <div class="sliderPele">
-          <div class="product">
-            <div class="product-discounts">
-              <div class="pointer">
-                <span>Akcija </span>
-              </div>
-            </div>
-
-            <div class="product-img u-margin-bottom-sm">
-              <a href="#" class="button btnMore">Detaljnije</a>
-              <a href="#" class="product-img-svg">
-                <span>
-                  <svg class="product_svg">
-                    <use xlink:href="img/sprite.svg#icon-star-full"></use>
-                  </svg>
-                </span>
-              </a>
-              <a href="#" class="product-img-image"
-                ><img src="/img/product.jpg" alt=""
-              /></a>
-            </div>
-
-            <p class="product-name u-margin-bottom-sm">
-              <a href="#">Sony Bluetooth zvučnik</a>
-            </p>
-
-            <span class="product-lineThrough u-margin-bottom-sm">
-              <span class="product-oldPrice">4.999 DIN</span>
-            </span>
-
-            <p class="product-newPrice u-margin-bottom-sm">3.856 DIN</p>
-            <a class="button u-margin-bottom-sm" href="#">
-              <svg class="product_svg">
-                <use xlink:href="img/sprite.svg#icon-cart2"></use>
-              </svg>
-              <span>Dodaj u korpu</span>
-            </a>
-          </div>
-        </div>
-        <div class="sliderPele">
-          <div class="product">
-            <div class="product-discounts">
-              <div class="pointer">
-                <span>Akcija </span>
-              </div>
-              <div class="discount">
-                <span>20% </span>
-              </div>
-            </div>
-
-            <div class="product-img u-margin-bottom-sm">
-              <a href="#" class="button btnMore">Detaljnije</a>
-              <a href="#" class="product-img-svg">
-                <span>
-                  <svg class="product_svg">
-                    <use xlink:href="img/sprite.svg#icon-star-full"></use>
-                  </svg>
-                </span>
-              </a>
-              <a href="#" class="product-img-image"
-                ><img src="/img/product.jpg" alt=""
-              /></a>
-            </div>
-
-            <p class="product-name u-margin-bottom-sm">
-              <a href="#">Sony Bluetooth zvučnik</a>
-            </p>
-
-            <span class="product-lineThrough u-margin-bottom-sm">
-              <span class="product-oldPrice">4.999 DIN</span>
-            </span>
-
-            <p class="product-newPrice u-margin-bottom-sm">3.856 DIN</p>
-            <a class="button u-margin-bottom-sm" href="#">
-              <svg class="product_svg">
-                <use xlink:href="img/sprite.svg#icon-cart2"></use>
-              </svg>
-              <span>Dodaj u korpu</span>
-            </a>
-          </div>
-        </div>
-        <div class="sliderPele">
-          <div class="product">
-            <div class="product-discounts">
-              <div class="pointer">
-                <span>Akcija </span>
-              </div>
-              <div class="discount">
-                <span>20% </span>
-              </div>
-            </div>
-
-            <div class="product-img u-margin-bottom-sm">
-              <a href="#" class="button btnMore">Detaljnije</a>
-              <a href="#" class="product-img-svg product-img-svg-active">
-                <span>
-                  <svg class="product_svg">
-                    <use xlink:href="img/sprite.svg#icon-star-full"></use>
-                  </svg>
-                </span>
-              </a>
-              <a href="#" class="product-img-image"
-                ><img src="/img/product.jpg" alt=""
-              /></a>
-            </div>
-
-            <p class="product-name u-margin-bottom-sm">
-              <a href="#">Sony Bluetooth zvučnik</a>
-            </p>
-
-            <span class="product-lineThrough u-margin-bottom-sm">
-              <span class="product-oldPrice">4.999 DIN</span>
-            </span>
-
-            <p class="product-newPrice u-margin-bottom-sm">3.856 DIN</p>
-            <a class="button u-margin-bottom-sm" href="#">
-              <svg class="product_svg">
-                <use xlink:href="img/sprite.svg#icon-cart2"></use>
-              </svg>
-              <span>Dodaj u korpu</span>
-            </a>
-          </div>
-        </div>
-        <div class="sliderPele">
-          <div class="product">
-            <div class="product-discounts">
-              <div class="pointer">
-                <span>Akcija </span>
-              </div>
-              <div class="discount">
-                <span>20% </span>
-              </div>
-            </div>
-
-            <div class="product-img u-margin-bottom-sm">
-              <a href="#" class="button btnMore">Detaljnije</a>
-              <a href="#" class="product-img-svg">
-                <span>
-                  <svg class="product_svg">
-                    <use xlink:href="img/sprite.svg#icon-star-full"></use>
-                  </svg>
-                </span>
-              </a>
-              <a href="#" class="product-img-image"
-                ><img src="/img/product.jpg" alt=""
-              /></a>
-            </div>
-
-            <p class="product-name u-margin-bottom-sm">
-              <a href="#">Sony Bluetooth zvučnik</a>
-            </p>
-
-            <span class="product-lineThrough u-margin-bottom-sm">
-              <span class="product-oldPrice">4.999 DIN</span>
-            </span>
-
-            <p class="product-newPrice u-margin-bottom-sm">3.856 DIN</p>
-            <a class="button u-margin-bottom-sm" href="#">
-              <svg class="product_svg">
-                <use xlink:href="img/sprite.svg#icon-cart2"></use>
-              </svg>
-              <span>Dodaj u korpu</span>
-            </a>
-          </div>
-        </div>
-        <div class="sliderPele">
-          <div class="product">
-            <div class="product-discounts">
-              <div class="pointer">
-                <span>Akcija </span>
-              </div>
-              <div class="discount">
-                <span>20% </span>
-              </div>
-            </div>
-
-            <div class="product-img u-margin-bottom-sm">
-              <a href="#" class="button btnMore">Detaljnije</a>
-              <a href="#" class="product-img-svg product-img-svg-active">
-                <span>
-                  <svg class="product_svg">
-                    <use xlink:href="img/sprite.svg#icon-star-full"></use>
-                  </svg>
-                </span>
-              </a>
-              <a href="#" class="product-img-image"
-                ><img src="/img/product.jpg" alt=""
-              /></a>
-            </div>
-
-            <p class="product-name u-margin-bottom-sm">
-              <a href="#">Sony Bluetooth zvučnik</a>
-            </p>
-
-            <span class="product-lineThrough u-margin-bottom-sm">
-              <span class="product-oldPrice">4.999 DIN</span>
-            </span>
-
-            <p class="product-newPrice u-margin-bottom-sm">3.856 DIN</p>
-            <a class="button u-margin-bottom-sm" href="#">
-              <svg class="product_svg">
-                <use xlink:href="img/sprite.svg#icon-cart2"></use>
-              </svg>
-              <span>Dodaj u korpu</span>
-            </a>
-          </div>
-        </div>
-        <div class="sliderPele">
-          <div class="product">
-            <div class="product-discounts">
-              <div class="pointer">
-                <span>Akcija </span>
-              </div>
-              <div class="discount">
-                <span>20% </span>
-              </div>
-            </div>
-
-            <div class="product-img u-margin-bottom-sm">
-              <a href="#" class="button btnMore">Detaljnije</a>
-              <a href="#" class="product-img-svg">
-                <span>
-                  <svg class="product_svg">
-                    <use xlink:href="img/sprite.svg#icon-star-full"></use>
-                  </svg>
-                </span>
-              </a>
-              <a href="#" class="product-img-image"
-                ><img src="/img/product.jpg" alt=""
-              /></a>
-            </div>
-
-            <p class="product-name u-margin-bottom-sm">
-              <a href="#">Sony Bluetooth zvučnik</a>
-            </p>
-
-            <span class="product-lineThrough u-margin-bottom-sm">
-              <span class="product-oldPrice">4.999 DIN</span>
-            </span>
-
-            <p class="product-newPrice u-margin-bottom-sm">3.856 DIN</p>
-            <a class="button u-margin-bottom-sm" href="#">
-              <svg class="product_svg">
-                <use xlink:href="img/sprite.svg#icon-cart2"></use>
-              </svg>
-              <span>Dodaj u korpu</span>
-            </a>
-          </div>
-        </div>
-        <div class="sliderPele">
-          <div class="product">
-            <div class="product-discounts">
-              <div class="pointer">
-                <span>Akcija </span>
-              </div>
-              <div class="discount">
-                <span>20% </span>
-              </div>
-            </div>
-
-            <div class="product-img u-margin-bottom-sm">
-              <a href="#" class="button btnMore">Detaljnije</a>
-              <a href="#" class="product-img-svg product-img-svg-active">
-                <span>
-                  <svg class="product_svg">
-                    <use xlink:href="img/sprite.svg#icon-star-full"></use>
-                  </svg>
-                </span>
-              </a>
-              <a href="#" class="product-img-image"
-                ><img src="/img/product.jpg" alt=""
-              /></a>
-            </div>
-
-            <p class="product-name u-margin-bottom-sm">
-              <a href="#">Sony Bluetooth zvučnik</a>
-            </p>
-
-            <span class="product-lineThrough u-margin-bottom-sm">
-              <span class="product-oldPrice">4.999 DIN</span>
-            </span>
-
-            <p class="product-newPrice u-margin-bottom-sm">3.856 DIN</p>
-            <a class="button u-margin-bottom-sm" href="#">
-              <svg class="product_svg">
-                <use xlink:href="img/sprite.svg#icon-cart2"></use>
-              </svg>
-              <span>Dodaj u korpu</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="products u-margin-top-md u-margin-bottom-md">
-      <h2>Nesto drugacije</h2>
-      <div class="products__container slideSlick">
-        <div class="sliderPele">
-          <div class="product">
-            <div class="product-discounts">
-              <div class="pointer">
-                <span>Akcija </span>
-              </div>
-              <div class="discount">
-                <span>20% </span>
-              </div>
-            </div>
-
-            <div class="product-img u-margin-bottom-sm">
-              <a href="#" class="button btnMore">Detaljnije</a>
-              <a href="#" class="product-img-svg">
-                <span>
-                  <svg class="product_svg">
-                    <use xlink:href="img/sprite.svg#icon-star-full"></use>
-                  </svg>
-                </span>
-              </a>
-              <a href="#" class="product-img-image"
-                ><img src="/img/product.jpg" alt=""
-              /></a>
-            </div>
-
-            <p class="product-name u-margin-bottom-sm">
-              <a href="#">Sony Bluetooth zvučnik</a>
-            </p>
-
-            <span class="product-lineThrough u-margin-bottom-sm">
-              <span class="product-oldPrice">4.999 DIN</span>
-            </span>
-
-            <p class="product-newPrice u-margin-bottom-sm">3.856 DIN</p>
-            <a class="button u-margin-bottom-sm" href="#">
-              <svg class="product_svg">
-                <use xlink:href="img/sprite.svg#icon-cart2"></use>
-              </svg>
-              <span>Dodaj u korpu</span>
-            </a>
-          </div>
-        </div>
-        <div class="sliderPele">
-          <div class="product">
-            <div class="product-discounts">
-              <div class="pointer">
-                <span>Akcija </span>
-              </div>
-            </div>
-
-            <div class="product-img u-margin-bottom-sm">
-              <a href="#" class="button btnMore">Detaljnije</a>
-              <a href="#" class="product-img-svg product-img-svg-active">
-                <span>
-                  <svg class="product_svg">
-                    <use xlink:href="img/sprite.svg#icon-star-full"></use>
-                  </svg>
-                </span>
-              </a>
-              <a href="#" class="product-img-image"
-                ><img src="/img/product.jpg" alt=""
-              /></a>
-            </div>
-
-            <p class="product-name u-margin-bottom-sm">
-              <a href="#">Sony Bluetooth zvučnik</a>
-            </p>
-
-            <span class="product-lineThrough u-margin-bottom-sm">
-              <span class="product-oldPrice">4.999 DIN</span>
-            </span>
-
-            <p class="product-newPrice u-margin-bottom-sm">3.856 DIN</p>
-            <a class="button u-margin-bottom-sm" href="#">
-              <svg class="product_svg">
-                <use xlink:href="img/sprite.svg#icon-cart2"></use>
-              </svg>
-              <span>Dodaj u korpu</span>
-            </a>
-          </div>
-        </div>
-        <div class="sliderPele">
-          <div class="product">
-            <div class="product-discounts">
-              <div class="pointer">
-                <span>Akcija </span>
-              </div>
-              <div class="discount">
-                <span>20% </span>
-              </div>
-            </div>
-
-            <div class="product-img u-margin-bottom-sm">
-              <a href="#" class="button btnMore">Detaljnije</a>
-              <a href="#" class="product-img-svg">
-                <span>
-                  <svg class="product_svg">
-                    <use xlink:href="img/sprite.svg#icon-star-full"></use>
-                  </svg>
-                </span>
-              </a>
-              <a href="#" class="product-img-image"
-                ><img src="/img/product.jpg" alt=""
-              /></a>
-            </div>
-
-            <p class="product-name u-margin-bottom-sm">
-              <a href="#">Sony Bluetooth zvučnik</a>
-            </p>
-
-            <span class="product-lineThrough u-margin-bottom-sm">
-              <span class="product-oldPrice">4.999 DIN</span>
-            </span>
-
-            <p class="product-newPrice u-margin-bottom-sm">3.856 DIN</p>
-            <a class="button u-margin-bottom-sm" href="#">
-              <svg class="product_svg">
-                <use xlink:href="img/sprite.svg#icon-cart2"></use>
-              </svg>
-              <span>Dodaj u korpu</span>
-            </a>
-          </div>
-        </div>
-        <div class="sliderPele">
-          <div class="product">
-            <div class="product-discounts">
-              <div class="pointer">
-                <span>Akcija </span>
-              </div>
-            </div>
-
-            <div class="product-img u-margin-bottom-sm">
-              <a href="#" class="button btnMore">Detaljnije</a>
-              <a href="#" class="product-img-svg">
-                <span>
-                  <svg class="product_svg">
-                    <use xlink:href="img/sprite.svg#icon-star-full"></use>
-                  </svg>
-                </span>
-              </a>
-              <a href="#" class="product-img-image"
-                ><img src="/img/product.jpg" alt=""
-              /></a>
-            </div>
-
-            <p class="product-name u-margin-bottom-sm">
-              <a href="#">Sony Bluetooth zvučnik</a>
-            </p>
-
-            <span class="product-lineThrough u-margin-bottom-sm">
-              <span class="product-oldPrice">4.999 DIN</span>
-            </span>
-
-            <p class="product-newPrice u-margin-bottom-sm">3.856 DIN</p>
-            <a class="button u-margin-bottom-sm" href="#">
-              <svg class="product_svg">
-                <use xlink:href="img/sprite.svg#icon-cart2"></use>
-              </svg>
-              <span>Dodaj u korpu</span>
-            </a>
-          </div>
-        </div>
-        <div class="sliderPele">
-          <div class="product">
-            <div class="product-discounts">
-              <div class="pointer">
-                <span>Akcija </span>
-              </div>
-              <div class="discount">
-                <span>20% </span>
-              </div>
-            </div>
-
-            <div class="product-img u-margin-bottom-sm">
-              <a href="#" class="button btnMore">Detaljnije</a>
-              <a href="#" class="product-img-svg">
-                <span>
-                  <svg class="product_svg">
-                    <use xlink:href="img/sprite.svg#icon-star-full"></use>
-                  </svg>
-                </span>
-              </a>
-              <a href="#" class="product-img-image"
-                ><img src="/img/product.jpg" alt=""
-              /></a>
-            </div>
-
-            <p class="product-name u-margin-bottom-sm">
-              <a href="#">Sony Bluetooth zvučnik</a>
-            </p>
-
-            <span class="product-lineThrough u-margin-bottom-sm">
-              <span class="product-oldPrice">4.999 DIN</span>
-            </span>
-
-            <p class="product-newPrice u-margin-bottom-sm">3.856 DIN</p>
-            <a class="button u-margin-bottom-sm" href="#">
-              <svg class="product_svg">
-                <use xlink:href="img/sprite.svg#icon-cart2"></use>
-              </svg>
-              <span>Dodaj u korpu</span>
-            </a>
-          </div>
-        </div>
-        <div class="sliderPele">
-          <div class="product">
-            <div class="product-discounts">
-              <div class="pointer">
-                <span>Akcija </span>
-              </div>
-              <div class="discount">
-                <span>20% </span>
-              </div>
-            </div>
-
-            <div class="product-img u-margin-bottom-sm">
-              <a href="#" class="button btnMore">Detaljnije</a>
-              <a href="#" class="product-img-svg product-img-svg-active">
-                <span>
-                  <svg class="product_svg">
-                    <use xlink:href="img/sprite.svg#icon-star-full"></use>
-                  </svg>
-                </span>
-              </a>
-              <a href="#" class="product-img-image"
-                ><img src="/img/product.jpg" alt=""
-              /></a>
-            </div>
-
-            <p class="product-name u-margin-bottom-sm">
-              <a href="#">Sony Bluetooth zvučnik</a>
-            </p>
-
-            <span class="product-lineThrough u-margin-bottom-sm">
-              <span class="product-oldPrice">4.999 DIN</span>
-            </span>
-
-            <p class="product-newPrice u-margin-bottom-sm">3.856 DIN</p>
-            <a class="button u-margin-bottom-sm" href="#">
-              <svg class="product_svg">
-                <use xlink:href="img/sprite.svg#icon-cart2"></use>
-              </svg>
-              <span>Dodaj u korpu</span>
-            </a>
-          </div>
-        </div>
-        <div class="sliderPele">
-          <div class="product">
-            <div class="product-discounts">
-              <div class="pointer">
-                <span>Akcija </span>
-              </div>
-              <div class="discount">
-                <span>20% </span>
-              </div>
-            </div>
-
-            <div class="product-img u-margin-bottom-sm">
-              <a href="#" class="button btnMore">Detaljnije</a>
-              <a href="#" class="product-img-svg">
-                <span>
-                  <svg class="product_svg">
-                    <use xlink:href="img/sprite.svg#icon-star-full"></use>
-                  </svg>
-                </span>
-              </a>
-              <a href="#" class="product-img-image"
-                ><img src="/img/product.jpg" alt=""
-              /></a>
-            </div>
-
-            <p class="product-name u-margin-bottom-sm">
-              <a href="#">Sony Bluetooth zvučnik</a>
-            </p>
-
-            <span class="product-lineThrough u-margin-bottom-sm">
-              <span class="product-oldPrice">4.999 DIN</span>
-            </span>
-
-            <p class="product-newPrice u-margin-bottom-sm">3.856 DIN</p>
-            <a class="button u-margin-bottom-sm" href="#">
-              <svg class="product_svg">
-                <use xlink:href="img/sprite.svg#icon-cart2"></use>
-              </svg>
-              <span>Dodaj u korpu</span>
-            </a>
-          </div>
-        </div>
-        <div class="sliderPele">
-          <div class="product">
-            <div class="product-discounts">
-              <div class="pointer">
-                <span>Akcija </span>
-              </div>
-              <div class="discount">
-                <span>20% </span>
-              </div>
-            </div>
-
-            <div class="product-img u-margin-bottom-sm">
-              <a href="#" class="button btnMore">Detaljnije</a>
-              <a href="#" class="product-img-svg product-img-svg-active">
-                <span>
-                  <svg class="product_svg">
-                    <use xlink:href="img/sprite.svg#icon-star-full"></use>
-                  </svg>
-                </span>
-              </a>
-              <a href="#" class="product-img-image"
-                ><img src="/img/product.jpg" alt=""
-              /></a>
-            </div>
-
-            <p class="product-name u-margin-bottom-sm">
-              <a href="#">Sony Bluetooth zvučnik</a>
-            </p>
-
-            <span class="product-lineThrough u-margin-bottom-sm">
-              <span class="product-oldPrice">4.999 DIN</span>
-            </span>
-
-            <p class="product-newPrice u-margin-bottom-sm">3.856 DIN</p>
-            <a class="button u-margin-bottom-sm" href="#">
-              <svg class="product_svg">
-                <use xlink:href="img/sprite.svg#icon-cart2"></use>
-              </svg>
-              <span>Dodaj u korpu</span>
-            </a>
-          </div>
-        </div>
-        <div class="sliderPele">
-          <div class="product">
-            <div class="product-discounts">
-              <div class="pointer">
-                <span>Akcija </span>
-              </div>
-              <div class="discount">
-                <span>20% </span>
-              </div>
-            </div>
-
-            <div class="product-img u-margin-bottom-sm">
-              <a href="#" class="button btnMore">Detaljnije</a>
-              <a href="#" class="product-img-svg">
-                <span>
-                  <svg class="product_svg">
-                    <use xlink:href="img/sprite.svg#icon-star-full"></use>
-                  </svg>
-                </span>
-              </a>
-              <a href="#" class="product-img-image"
-                ><img src="/img/product.jpg" alt=""
-              /></a>
-            </div>
-
-            <p class="product-name u-margin-bottom-sm">
-              <a href="#">Sony Bluetooth zvučnik</a>
-            </p>
-
-            <span class="product-lineThrough u-margin-bottom-sm">
-              <span class="product-oldPrice">4.999 DIN</span>
-            </span>
-
-            <p class="product-newPrice u-margin-bottom-sm">3.856 DIN</p>
-            <a class="button u-margin-bottom-sm" href="#">
-              <svg class="product_svg">
-                <use xlink:href="img/sprite.svg#icon-cart2"></use>
-              </svg>
-              <span>Dodaj u korpu</span>
-            </a>
-          </div>
-        </div>
-        <div class="sliderPele">
-          <div class="product">
-            <div class="product-discounts">
-              <div class="pointer">
-                <span>Akcija </span>
-              </div>
-              <div class="discount">
-                <span>20% </span>
-              </div>
-            </div>
-
-            <div class="product-img u-margin-bottom-sm">
-              <a href="#" class="button btnMore">Detaljnije</a>
-              <a href="#" class="product-img-svg product-img-svg-active">
-                <span>
-                  <svg class="product_svg">
-                    <use xlink:href="img/sprite.svg#icon-star-full"></use>
-                  </svg>
-                </span>
-              </a>
-              <a href="#" class="product-img-image"
-                ><img src="/img/product.jpg" alt=""
-              /></a>
-            </div>
-
-            <p class="product-name u-margin-bottom-sm">
-              <a href="#">Sony Bluetooth zvučnik</a>
-            </p>
-
-            <span class="product-lineThrough u-margin-bottom-sm">
-              <span class="product-oldPrice">4.999 DIN</span>
-            </span>
-
-            <p class="product-newPrice u-margin-bottom-sm">3.856 DIN</p>
-            <a class="button u-margin-bottom-sm" href="#">
-              <svg class="product_svg">
-                <use xlink:href="img/sprite.svg#icon-cart2"></use>
-              </svg>
-              <span>Dodaj u korpu</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="info">
-      <div class="info__container">
-        <div class="info__item">
-          <svg class="header__top-search">
-            <use xlink:href="img/sprite.svg#icon-search"></use>
-          </svg>
-          <h3>Besplatna dostava</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
-            facere labore. Perferendis, eum delectus magni ab eius quia laborum
-            dicta inventore vel.
-          </p>
-        </div>
-        <div class="info__item">
-          <svg class="header__top-search">
-            <use xlink:href="img/sprite.svg#icon-search"></use>
-          </svg>
-          <h3>Povrat u roku od 15 dana</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
-            facere labore. Perferendis, eum delectus magni ab eius quia laborum
-            dicta inventore vel.
-          </p>
-        </div>
-        <div class="info__item">
-          <svg class="header__top-search">
-            <use xlink:href="img/sprite.svg#icon-search"></use>
-          </svg>
-          <h3>Garancija</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
-            facere labore. Perferendis, eum delectus magni ab eius quia laborum
-            dicta inventore vel.
-          </p>
-        </div>
-
-        <div class="info__item">
-          <svg class="header__top-search">
-            <use xlink:href="img/sprite.svg#icon-search"></use>
-          </svg>
-          <h3>Besplatna dostava</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
-            facere labore. Perferendis, eum delectus magni ab eius quia laborum
-            dicta inventore vel.
-          </p>
-        </div>
-      </div>
-    </div>
 
     <div class="footer">LINKOVI</div>
     <!-- <svg class="header__top-cart">

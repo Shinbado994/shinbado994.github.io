@@ -1,0 +1,94 @@
+/////////////////////////////////////
+//////// Checkbox idea by Andreas Storm
+
+.label-cbx {
+  user-select: none;
+  cursor: pointer;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  //   height: 5rem;
+}
+
+.label-cbx input:checked + .checkbox {
+  //   border-color: #20c2e0;
+  border-color: $color-tertiary-light;
+}
+
+.label-cbx input:checked + .checkbox svg path {
+  //   fill: #20c2e0;
+  fill: $color-tertiary-light;
+}
+
+.label-cbx input:checked + .checkbox svg polyline {
+  stroke-dashoffset: 0;
+}
+
+.label-cbx:hover .checkbox svg path {
+  stroke-dashoffset: 0;
+}
+
+.label-cbx .checkbox {
+  position: relative;
+  //   top: 2px;
+  //   float: left;
+
+  //   margin-right: 8px;
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 2px solid #c8ccd4;
+  border-radius: 3px;
+  margin-right: 0.8rem;
+}
+
+.label-cbx .checkbox svg {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+}
+
+.label-cbx .checkbox svg path {
+  fill: none;
+  //   stroke: #20c2e0;
+  stroke: $color-tertiary-light;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 69px;
+  stroke-dashoffset: 69px;
+  transition: all 0.6s ease;
+}
+
+.label-cbx .checkbox svg polyline {
+  fill: none;
+  stroke: $color-grey-light-1;
+  //   stroke: red;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 18px;
+  stroke-dashoffset: 18px;
+  transition: all 0.3s ease;
+}
+
+.label-cbx > span {
+  pointer-events: none;
+  vertical-align: middle;
+}
+
+.cntr {
+  //   position: absolute;
+  //   top: 45%;
+  left: 0.6rem;
+  width: 100%;
+  //   text-align: center;
+  margin-bottom: 0.4rem;
+}
+
+.invisible {
+  position: absolute;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}

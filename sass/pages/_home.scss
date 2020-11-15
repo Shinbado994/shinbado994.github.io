@@ -626,6 +626,7 @@
         &-container {
           // display: grid;
           // grid-template-columns: repeat(4, 25%);
+          background-color: $color-grey-light-2;
         }
         div {
           padding: 0.4rem 0.8rem;
@@ -841,7 +842,7 @@
 .footer {
   display: flex;
   width: 100%;
-  height: 30rem;
+  height: 300rem;
   background-color: $color-black;
   color: $color-white;
   align-items: center;
