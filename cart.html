@@ -1302,17 +1302,201 @@
         </div>
       </div>
     </div>
-    <div class="breadcrumbs">
-      <div class="breadcrumbs__container">
+    <div class="cartBreadcrumbs">
+      <h1>Korpa</h1>
+      <div class="crumbs">
         <ul>
-          <li><a href=""> Pocetna </a></li>
-          <li><a href=""> Kategorija 1 </a></li>
-          <li>Tu smo</li>
+          <li></li>
+          <li class="active">Pregled korpe</li>
+          <li>podaci za isporuku</li>
+          <li>Slanje narudžbine</li>
         </ul>
-        <h1>Kategorija 1</h1>
+      </div>
+
+      <!-- <div class="crumbs">
+        <ul>
+          <li >
+            <a href="#1" ></a>
+          </li>
+          <li class="active">
+            <a href="#2"
+              >Pregled korpe</a
+            >
+          </li>
+          <li>
+            <a href="#3"
+              > podaci za isporuku</a
+            >
+          </li>
+          <li>
+            <a href="#4"
+              ></i>
+              Slanje narudžbine</a
+            >
+          </li>
+        </ul>
+      </div> -->
+    </div>
+    <div class="cartArea">
+      <div class="cartArea__container">
+        <table
+          id="products"
+          class="productsTable"
+          cellpadding="0"
+          cellspacing="0"
+        >
+          <tr class="productsTable-heading">
+            <th></th>
+            <th>RB</th>
+            <th>Naziv proizvoda</th>
+            <th>Šifra</th>
+            <th>Cena</th>
+            <th>Količina</th>
+            <th>Iznos</th>
+            <th>Obriši</th>
+          </tr>
+          <tr class="productsTable-tr">
+            <td>
+              <img src="/img/product2.jpg" alt="" />
+            </td>
+            <td>1</td>
+            <td>
+              <a href="">Sony Bluetooth zvučnik, jos neki tekst za proveru</a>
+            </td>
+            <td>
+              <a href="">E2E4C7C5</a>
+            </td>
+            <td>3.888,00 DIN</td>
+            <td>
+              <div class="number-input">
+                <button
+                  onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                ></button>
+                <input
+                  class="quantity"
+                  min="0"
+                  name="quantity"
+                  value="1"
+                  type="number"
+                />
+                <button
+                  onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                  class="plus"
+                ></button>
+              </div>
+            </td>
+            <td>3.888,00</td>
+            <td><a href="#" class="removeFromCart"></a></td>
+          </tr>
+          <tr class="productsTable-tr">
+            <td>
+              <img src="/img/product2.jpg" alt="" />
+            </td>
+            <td>1</td>
+            <td>
+              <a href="">Sony Bluetooth zvučnik, jos neki tekst za proveru</a>
+            </td>
+            <td>
+              <a href="">E2E4C7C5</a>
+            </td>
+            <td>3.888,00 DIN</td>
+            <td>
+              <div class="number-input">
+                <button
+                  onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                ></button>
+                <input
+                  class="quantity"
+                  min="0"
+                  name="quantity"
+                  value="1"
+                  type="number"
+                />
+                <button
+                  onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                  class="plus"
+                ></button>
+              </div>
+            </td>
+            <td>3.888,00</td>
+            <td><a href="#" class="removeFromCart"></a></td>
+          </tr>
+          <tr class="productsTable-tr">
+            <td>
+              <img src="/img/product2.jpg" alt="" />
+            </td>
+            <td>1</td>
+            <td>
+              <a href="">Sony Bluetooth zvučnik, jos neki tekst za proveru</a>
+            </td>
+            <td>
+              <a href="">E2E4C7C5</a>
+            </td>
+            <td>3.888,00 DIN</td>
+            <td>
+              <div class="number-input">
+                <button
+                  onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                ></button>
+                <input
+                  class="quantity"
+                  min="0"
+                  name="quantity"
+                  value="1"
+                  type="number"
+                />
+                <button
+                  onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                  class="plus"
+                ></button>
+              </div>
+            </td>
+            <td>3.888,00</td>
+            <td><a href="#" class="removeFromCart"></a></td>
+          </tr>
+          <tr class="productsTable-tr">
+            <td>
+              <img src="/img/product2.jpg" alt="" />
+            </td>
+            <td>1</td>
+            <td>
+              <a href="">Sony Bluetooth zvučnik, jos neki tekst za proveru</a>
+            </td>
+            <td>
+              <a href="">E2E4C7C5</a>
+            </td>
+            <td>3.888,00 DIN</td>
+            <td>
+              <div class="number-input">
+                <button
+                  onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                ></button>
+                <input
+                  class="quantity"
+                  min="0"
+                  name="quantity"
+                  value="1"
+                  type="number"
+                />
+                <button
+                  onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                  class="plus"
+                ></button>
+              </div>
+            </td>
+            <td>3.888,00</td>
+            <td><a href="#" class="removeFromCart"></a></td>
+          </tr>
+          <tr class="price productsTable-tr">
+            <td colspan="8">Ukupna cena: 22.245,00 DIN</td>
+          </tr>
+        </table>
+        <div class="cartArea__buttons">
+          <button class="cartArea__buttons-hide"></button>
+          <button>Sledeći korak</button>
+        </div>
       </div>
     </div>
-
     <!-- <div class="main">
         123
     </div> -->

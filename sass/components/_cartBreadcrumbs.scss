@@ -1,0 +1,95 @@
+.cartBreadcrumbs {
+  width: 120rem;
+  margin: 0 auto 3.2rem auto;
+  h1 {
+    text-align: center;
+    font-family: $font-heading;
+    font-weight: normal;
+    padding-top: 2.4rem;
+    margin-bottom: 1.6rem;
+  }
+}
+
+.crumbs {
+  text-align: center;
+  //   height: 20rem;
+  ul {
+    list-style: none;
+    display: inline-table;
+    li {
+      user-select: none;
+      display: inline;
+
+      text-transform: uppercase;
+      display: block;
+      float: left;
+      height: 4rem;
+      background: $color-grey-light-1;
+
+      text-align: center;
+      padding: 0.8rem 5rem 0 5rem;
+      position: relative;
+      margin: 0 1rem 0 0;
+
+      font-size: 1.8rem;
+      text-decoration: none;
+      color: $color-tertiary-light;
+
+      &:after {
+        content: "";
+        border-top: 2rem solid transparent;
+        border-bottom: 2rem solid transparent;
+        border-left: 2rem solid $color-grey-light-1;
+        position: absolute;
+        right: -2rem;
+        top: 0;
+        z-index: 1;
+      }
+      &:before {
+        content: "";
+        border-top: 2rem solid transparent;
+        border-bottom: 2rem solid transparent;
+        border-left: 2rem solid #fff;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+}
+
+.crumbs ul li:first-child {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.crumbs ul li:first-child::before {
+  display: none;
+}
+
+.crumbs ul li:last-child {
+  padding-right: 2rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.crumbs ul li:last-child::after {
+  display: none;
+}
+
+// .crumbs ul li a:hover {
+//   background: $color-tertiary-light;
+//   color: #fff;
+// }
+// .crumbs ul li a:hover:after {
+//   border-left-color: $color-tertiary-light;
+//   color: #fff;
+// }
+
+.crumbs .active {
+  background: $color-tertiary-light;
+  color: #fff;
+}
+
+.crumbs .active:after {
+  border-left-color: $color-tertiary-light;
+  color: #fff;
+}
