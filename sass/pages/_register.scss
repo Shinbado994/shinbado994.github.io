@@ -19,6 +19,10 @@
   a {
     text-decoration: none;
     color: $color-tertiary-light;
+    transition: all 0.2s;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
   }
 
   &-span {
@@ -63,6 +67,16 @@
     align-items: center;
     label {
       margin-left: 0.4rem;
+      cursor: pointer;
+    }
+    a:hover {
+      // transform: scale(1.02);
+
+      // color: $color-tertiary-dark;
+      // opacity: 0.6;
+    }
+    .slazem {
+      // cursor: pointer;
     }
     margin-bottom: 1.2rem;
   }
