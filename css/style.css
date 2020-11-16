@@ -1320,3 +1320,51 @@ body {
       .categoryProducts__products-grid .product img {
         width: 25rem;
         height: auto; }
+
+.register__container {
+  width: 120rem;
+  margin: 0 auto; }
+  .register__container h1 {
+    text-align: center;
+    font-family: "Mukta", sans-serif;
+    font-weight: normal;
+    padding-top: 2.4rem;
+    margin-bottom: 1.6rem; }
+
+.form {
+  width: 70rem;
+  margin: 0rem auto 3.2rem auto; }
+  .form-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  .form-radio {
+    margin-bottom: 1.6rem; }
+    .form-radio label {
+      margin-right: 0.1rem; }
+    .form-radio input:first-of-type {
+      margin-right: 1.2rem; }
+  .form-item {
+    margin-bottom: 2.4rem;
+    display: grid; }
+    .form-item input {
+      border: 0.1rem solid #eee;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 1.5rem 0.4rem rgba(127, 31, 44, 0.06);
+      padding: 0.8rem 1.6rem;
+      width: 30rem; }
+    .form-item label {
+      margin-bottom: 0.4rem; }
+    .form-item input:focus {
+      outline: none;
+      border: 0.1rem solid #7f1f2c; }
+  .form button {
+    width: 10rem;
+    padding: 0.6rem 1.6rem;
+    background-color: #7f1f2c;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0.2rem 0.4rem 0.7rem rgba(51, 51, 51, 0.3);
+    color: #fefefe;
+    transition: all 0.2s; }
