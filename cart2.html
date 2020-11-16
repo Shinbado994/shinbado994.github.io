@@ -1303,12 +1303,12 @@
       </div>
     </div>
     <div class="cartBreadcrumbs">
-      <h1>Korpa</h1>
+      <h1>Podaci za isporuku</h1>
       <div class="crumbs">
         <ul>
           <li></li>
-          <li class="active">Pregled korpe</li>
-          <li>podaci za isporuku</li>
+          <li>Pregled korpe</li>
+          <li class="active">podaci za isporuku</li>
           <li>Slanje narudžbine</li>
         </ul>
       </div>
@@ -1339,164 +1339,92 @@
     </div>
     <div class="cartArea">
       <div class="cartArea__container">
-        <table
-          id="products"
-          class="productsTable"
-          cellpadding="0"
-          cellspacing="0"
-        >
-          <tr class="productsTable-heading">
-            <th></th>
-            <th>RB</th>
-            <th>Naziv proizvoda</th>
-            <th>Šifra</th>
-            <th>Cena</th>
-            <th>Količina</th>
-            <th>Iznos</th>
-            <th>Obriši</th>
-          </tr>
-          <tr class="productsTable-tr">
-            <td>
-              <img src="/img/product2.jpg" alt="" />
-            </td>
-            <td>1</td>
-            <td>
-              <a href="">Sony Bluetooth zvučnik, jos neki tekst za proveru</a>
-            </td>
-            <td>
-              <a href="">E2E4C7C5</a>
-            </td>
-            <td>3.888,00 DIN</td>
-            <td>
-              <div class="number-input">
-                <button
-                  onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                ></button>
-                <input
-                  class="quantity"
-                  min="0"
-                  name="quantity"
-                  value="1"
-                  type="number"
-                />
-                <button
-                  onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                  class="plus"
-                ></button>
+        <div class="form">
+          <!-- <div class="form-error">
+            <ul>
+              <li>Prva greska</li>
+              <li>Druga greska</li>
+            </ul>
+          </div> -->
+          <p>Vaš iznos za plaćanje iznosi: <span> 23.599,00 DIN</span></p>
+          <div class="form-radio">
+            <label for="">Pravno lice:</label>
+            <input type="radio" name="lice" id="" />
+            <label for="">Fizičko lice:</label>
+            <input type="radio" name="lice" id="" checked />
+          </div>
+          <form action="/" name="" id="" method="post">
+            <!-- <div class="form-error">
+                <ul>
+                  <li>Prva greska</li>
+                  <li>Druga greska</li>
+                </ul>
+              </div> -->
+            <div class="form-group">
+              <!-- <div class="form-radio"></div> -->
+
+              <div class="form-item">
+                <label for="">Ime:</label>
+                <input type="text" id="" name="firstname" placeholder="Ime" />
               </div>
-            </td>
-            <td>3.888,00</td>
-            <td><a href="#" class="removeFromCart"></a></td>
-          </tr>
-          <tr class="productsTable-tr">
-            <td>
-              <img src="/img/product2.jpg" alt="" />
-            </td>
-            <td>1</td>
-            <td>
-              <a href="">Sony Bluetooth zvučnik, jos neki tekst za proveru</a>
-            </td>
-            <td>
-              <a href="">E2E4C7C5</a>
-            </td>
-            <td>3.888,00 DIN</td>
-            <td>
-              <div class="number-input">
-                <button
-                  onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                ></button>
+              <div class="form-item">
+                <label for="">Prezime:</label>
                 <input
-                  class="quantity"
-                  min="0"
-                  name="quantity"
-                  value="1"
-                  type="number"
+                  type="text"
+                  id=""
+                  name="firstname"
+                  placeholder="Prezime"
                 />
-                <button
-                  onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                  class="plus"
-                ></button>
               </div>
-            </td>
-            <td>3.888,00</td>
-            <td><a href="#" class="removeFromCart"></a></td>
-          </tr>
-          <tr class="productsTable-tr">
-            <td>
-              <img src="/img/product2.jpg" alt="" />
-            </td>
-            <td>1</td>
-            <td>
-              <a href="">Sony Bluetooth zvučnik, jos neki tekst za proveru</a>
-            </td>
-            <td>
-              <a href="">E2E4C7C5</a>
-            </td>
-            <td>3.888,00 DIN</td>
-            <td>
-              <div class="number-input">
-                <button
-                  onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                ></button>
-                <input
-                  class="quantity"
-                  min="0"
-                  name="quantity"
-                  value="1"
-                  type="number"
-                />
-                <button
-                  onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                  class="plus"
-                ></button>
+            </div>
+
+            <div class="form-group">
+              <div class="form-item">
+                <label for="">Item1:</label>
+                <input type="text" id="" name="firstname" placeholder="Item1" />
               </div>
-            </td>
-            <td>3.888,00</td>
-            <td><a href="#" class="removeFromCart"></a></td>
-          </tr>
-          <tr class="productsTable-tr">
-            <td>
-              <img src="/img/product2.jpg" alt="" />
-            </td>
-            <td>1</td>
-            <td>
-              <a href="">Sony Bluetooth zvučnik, jos neki tekst za proveru</a>
-            </td>
-            <td>
-              <a href="">E2E4C7C5</a>
-            </td>
-            <td>3.888,00 DIN</td>
-            <td>
-              <div class="number-input">
-                <button
-                  onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                ></button>
-                <input
-                  class="quantity"
-                  min="0"
-                  name="quantity"
-                  value="1"
-                  type="number"
-                />
-                <button
-                  onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                  class="plus"
-                ></button>
+              <div class="form-item">
+                <label for="">Item2:</label>
+                <input type="text" id="" name="firstname" placeholder="Item2" />
               </div>
-            </td>
-            <td>3.888,00</td>
-            <td><a href="#" class="removeFromCart"></a></td>
-          </tr>
-          <tr class="price productsTable-tr">
-            <td colspan="8">Ukupna cena: 22.245,00 DIN</td>
-          </tr>
-        </table>
-        <div class="cartArea__buttons">
-          <a class="cartArea__buttons-hide"></a>
-          <a href="cart2.html" class="cartArea__buttons">Sledeći korak</a>
+            </div>
+            <div class="form-group">
+              <div class="form-item">
+                <label for="">Item3:</label>
+                <input type="text" id="" name="firstname" placeholder="Item3" />
+              </div>
+              <div class="form-item">
+                <label for="">Item4:</label>
+                <input type="text" id="" name="firstname" placeholder="Item4" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-item">
+                <label for="">Napomena:</label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+              </div>
+            </div>
+          </form>
+          <span class="form-span">Način Plaćanja:</span>
+          <div class="form-radio">
+            <label for="">Gotovinom(prilikom dostave):</label>
+            <input type="radio" name="lice" id="" />
+            <label for="">Preko računa:</label>
+            <input type="radio" name="lice" id="" checked />
+          </div>
+          <a href="123">Procitajte uslove koriscenja:</a>
+          <div class="form-check">
+            <input type="checkbox" name="" id="" />
+            <label for="">Pročitao i slažem se</label>
+          </div>
+          <div class="cartArea__buttons">
+            <a href="cart.html" class="cartArea__buttons">Prethodni korak</a>
+            <a class="cartArea__buttons">Zavrsi kupovinu</a>
+          </div>
         </div>
       </div>
     </div>
+
     <!-- <div class="main">
         123
     </div> -->

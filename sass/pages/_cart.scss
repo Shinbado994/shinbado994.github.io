@@ -5,9 +5,10 @@
       opacity: 0;
       pointer-events: none;
     }
-    button {
-      width: 15rem;
-      padding: 1rem 2rem;
+    a {
+      text-decoration: none;
+      width: 17rem;
+      padding: 0.8rem 1.2rem;
       background-color: $color-tertiary-light;
       border-radius: 0.5rem;
       outline: none;
@@ -16,6 +17,9 @@
       box-shadow: 0.2rem 0.4rem 0.7rem rgba($color-black, 0.3);
       color: $color-white;
       transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     display: flex;
     justify-content: space-between;
