@@ -459,3 +459,15 @@ function closeAllSelect(elmnt) {
   then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
  
+
+////////////////////////////////////////////////////
+///////////// 
+function confirmFunction(e) {
+  const conf = confirm("Press a button!");
+  if(!conf === true){
+    return true;
+  }
+  else{
+    e.preventDefault();
+  }
+}

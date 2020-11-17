@@ -28,6 +28,16 @@
     width: 120rem;
     margin: 0 auto;
   }
+  &__container.cart3 {
+    width: 80rem;
+
+    p {
+      margin-bottom: 0.8rem;
+    }
+    p:last-of-type {
+      margin-bottom: 3.2rem;
+    }
+  }
 }
 
 .productsTable {

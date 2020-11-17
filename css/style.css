@@ -1506,6 +1506,13 @@ body {
   width: 120rem;
   margin: 0 auto; }
 
+.cartArea__container.cart3 {
+  width: 80rem; }
+  .cartArea__container.cart3 p {
+    margin-bottom: 0.8rem; }
+  .cartArea__container.cart3 p:last-of-type {
+    margin-bottom: 3.2rem; }
+
 .productsTable {
   width: 120rem;
   margin-left: auto;
