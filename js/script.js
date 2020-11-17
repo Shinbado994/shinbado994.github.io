@@ -463,7 +463,7 @@ document.addEventListener("click", closeAllSelect);
 ////////////////////////////////////////////////////
 ///////////// 
 function confirmFunction(e) {
-  const conf = confirm("Press a button!");
+  const conf = confirm("Da li ste sigurni?");
   if(!conf === true){
     return true;
   }
