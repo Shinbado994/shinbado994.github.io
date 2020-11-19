@@ -1346,7 +1346,7 @@
                     <img
                       src="img/product1/1.jpg"
                       alt="Pozadina"
-                      class="backgroundimage zoom_07"
+                      class="backgroundimage zoom_01"
                       data-zoom-image="img/product1/1.jpg"
                     />
                     />
@@ -1971,10 +1971,13 @@
       });
     </script> -->
     <script>
-      $(".zoom_07").ezPlus({
-        zoomType: "lens",
-        lensShape: "round",
-        lensSize: 150,
+      $(".zoom_01").ezPlus({
+        //   zoomType: "lens",
+        //   lensShape: "round",
+        //   lensSize: 400,
+        // });
+        zoomType: "inner",
+        cursor: "crosshair",
       });
     </script>
 
