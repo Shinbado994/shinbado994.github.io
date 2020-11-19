@@ -1690,6 +1690,9 @@ input[type="number"]::-webkit-outer-spin-button {
   .singleProduct__left .slides {
     width: 100%;
     height: 100%; }
+  .singleProduct__left .slide img {
+    width: 100%;
+    height: 100%; }
   .singleProduct__left svg {
     fill: #7f1f2c; }
 
@@ -1810,15 +1813,15 @@ input[type="number"]::-webkit-outer-spin-button {
       fill: #7f1f2c;
       stroke-width: 0; }
   .singleProduct__amount-button svg {
-    width: 2rem;
-    height: 2rem;
+    width: 2.6rem;
+    height: 2.6rem;
     fill: #7c1424;
     transform: translate(0rem, 0.4rem); }
   .singleProduct__amount-button a.button:link,
   .singleProduct__amount-button a.button:visited {
     width: 30rem;
     outline: none;
-    padding: 0.7rem 0em;
+    padding: 0.6rem 0em;
     border-radius: 0.5rem;
     border: none;
     background-color: #fac053;
@@ -1827,6 +1830,7 @@ input[type="number"]::-webkit-outer-spin-button {
     text-align: center;
     display: block;
     margin: 0 auto;
+    font-size: 2.2rem;
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.03);
     transition: all 0.3s; }
     .singleProduct__amount-button a.button:link span,
@@ -1880,10 +1884,12 @@ input[type="number"]::-webkit-outer-spin-button {
     border-radius: 4rem; }
 
 .header__slider-left {
-  left: 8rem; }
+  left: 8rem;
+  z-index: 1000; }
 
 .header__slider-right {
-  right: 2rem; }
+  right: 2rem;
+  z-index: 1000; }
 
 .modal {
   position: fixed;
