@@ -1,20 +1,26 @@
 //// Slider
 
-function Slider(slider) {
+function Slider(slider, intTime) {
     if (!(slider instanceof Element)) {
       throw new Error('No slider passed in');
     }
+   
   
     // select elements needed
     this.slides = slider.querySelector('.slides');
     this.slider = slider;
-    this.myTimer = setInterval(this.move.bind(this), 50000);
+    this.myTimer = setInterval(this.move.bind(this), intTime);
+    this.intTime = intTime;
     const prevButton = slider.querySelector('.goToPrev');
     const nextButton = slider.querySelector('.goToNext');
   
     this.startSlider();
     this.applyClasses();
   
+
+
+    const thumbs = document.querySelectorAll('.thumbs');
+    thumbs.forEach(thumb => thumb.addEventListener('click', this.changeOnClick.bind(this, thumb)));
     /// / Event Listener
     prevButton.addEventListener('click', () => this.move('back'));
     nextButton.addEventListener('click', this.move.bind(this));
@@ -29,7 +35,23 @@ function Slider(slider) {
   //     // setInterval(fn, t);
   //   }
   // };
-  
+ 
+  //// Click on thumbnails
+  Slider.prototype.changeOnClick = function (thumb) {
+    thumbId = thumb.dataset['thumb'];
+    const classesToRemove = ['prev', 'current', 'next'];
+    console.log(this.prev, this.current, this.next);
+    this.prev.classList.remove(...classesToRemove);
+    this.current.classList.remove(...classesToRemove);
+    this.next.classList.remove(...classesToRemove);
+    this.current = document.querySelector(`div[data-slide="${thumbId}"]`);
+    this.prev = this.current.previousElementSibling || this.slides.lastElementChild;
+    this.next = this.current.nextElementSibling || this.slides.firstElementChild;
+    // console.log(slidePrev, slideCurrent, slideNext);
+    this.current.classList.add('current');
+    this.prev.classList.add('prev');
+    this.next.classList.add('next');
+  };
   Slider.prototype.startSlider = function () {
     this.current =
       this.slider.querySelector('.current') || this.slides.firstElementChild;
@@ -70,7 +92,7 @@ function Slider(slider) {
       ];
     }
     this.applyClasses();
-    this.myTimer = setInterval(this.move.bind(this), 50000);
+    this.myTimer = setInterval(this.move.bind(this), this.intTime);
     // console.log(this.myTimer);
     // this.sliderInterval(this.move.bind(this), 5000, 1);
   };
@@ -78,7 +100,11 @@ function Slider(slider) {
   // console.log(document.querySelector('.slider'));
   if(document.querySelector('.slider') !== null
   ){
-    const mySlider = new Slider(document.querySelector('.slider'));
+    const mySlider = new Slider(document.querySelector('.slider'),10000);
+  }
+  if(document.querySelector('.sliderProduct') !== null
+  ){
+    const mySlider = new Slider(document.querySelector('.sliderProduct'),500000);
   }
  
   
@@ -109,7 +135,7 @@ function Slider(slider) {
   function handleClickOuside(e){
     const inputs = document.querySelectorAll('.checkNavbar');
    if(clicked === 0){
-    console.log('too');
+    // console.log('too');
     //  console.log('too');
    }
    else if(clicked === 1)
@@ -135,11 +161,11 @@ function Slider(slider) {
      
     }
     else if(clicked === 3){
-      console.log('Ovo je trojka');
+      // console.log('Ovo je trojka');
       clicked ++;
     }
     else if (clicked === 4){
-      console.log('Ovo je cetvorka');
+      // console.log('Ovo je cetvorka');
       // inputs.forEach(input => input.checked = false);
       inputs.forEach(input => {
         if(input.name !== 'checkMenu'){
@@ -471,3 +497,107 @@ function confirmFunction(e) {
     e.preventDefault();
   }
 }
+
+//////////////////////////////////////////////////////////////
+/////////////////// Zoom on hover
+// $(document).ready(function () {
+//   $(".ex1").zoom({ duration: 120 });
+//   // $("#ex2").zoom({ on: "grab" });
+// });
+
+
+//////////////////////////////////////////////////////////////
+/////////////// Gallery
+
+function Gallery(gallery){
+  
+  const images = Array.from(gallery.querySelectorAll('.gallerySlide'));
+  // console.log(images);
+  const modal = document.querySelector('.modal');
+  const prevButton = modal.querySelector('.modalPrev');
+  const nextButton = modal.querySelector('.modalNext');
+  // console.log(nextButton);
+  let currentImage;
+
+
+  function openModal() {
+    if (modal.matches('.openModal')) {
+      // console.info('Modal already open');
+      return;
+    }
+    modal.classList.add('openModal');
+    // console.log('open Modal works');
+    window.addEventListener('keyup', handleKeyUp);
+    nextButton.addEventListener('click', showNextImage);
+    prevButton.addEventListener('click', showPrevImage);
+  }
+  function closeModal() {
+    modal.classList.remove('openModal');
+    window.removeEventListener('keyup', handleKeyUp);
+    nextButton.removeEventListener('click', showNextImage);
+    prevButton.removeEventListener('click', showPrevImage);
+  }
+
+  function showImage(el) {
+    // console.log(  el.querySelector('.backgroundimage'));
+    imageSrc =el.querySelector('.backgroundimage').src;
+    if (!el) {
+      console.info('no image to show');
+      return;
+    }
+    // console.log(el);
+    modal.querySelector('img').src = imageSrc;
+    currentImage = el;
+    openModal();
+  }
+  
+  function handleClickOutside(e) {
+    if (e.target === e.currentTarget) {
+     
+      closeModal();
+    }
+  }
+  function handleKeyUp(e) {
+    if (e.key === 'Escape') {
+      return closeModal();
+    }
+    if (e.key === 'ArrowRight') return showNextImage();
+    if (e.key === 'ArrowLeft') return showPrevImage();
+  }
+  function showNextImage() {
+    console.log(currentImage.nextElementSibling);
+    showImage(currentImage.nextElementSibling || gallery.firstElementChild);
+  }
+  function showPrevImage() {
+    console.log(currentImage.previousElementSibling);
+    showImage(currentImage.previousElementSibling || gallery.lastElementChild);
+  }
+
+  images.forEach((image) =>
+    image.addEventListener('click', (e) => showImage(e.currentTarget))
+  );
+  modal.addEventListener('click', handleClickOutside);
+}
+
+
+
+
+if(document.querySelector('.gallery1') !== null){
+  const gallery1 = Gallery(document.querySelector('.gallery1'));
+}
+
+
+
+
+/////////////////////////////////////////////////////////////
+/////////////// Opis i Dimenzije promena
+const descButtons = document.querySelectorAll('.productDescriptions');
+function handleDescButtonClick(){
+  const activeDesc = document.querySelector('.descriptionActive').classList.remove('descriptionActive');
+  this.classList.add('descriptionActive');
+  const activeInfoDesc = document.querySelector('.descriptionInfoActive');
+  const notActiveInfoDesc = activeInfoDesc.previousElementSibling || activeInfoDesc.nextElementSibling;
+  notActiveInfoDesc.classList.add('descriptionInfoActive');
+  activeInfoDesc.classList.remove('descriptionInfoActive');
+}
+descButtons.forEach(descButton => descButton.addEventListener('click', handleDescButtonClick));
