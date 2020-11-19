@@ -1676,7 +1676,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .singleProduct__container {
   width: 120rem;
   height: 60rem;
-  margin: 3.2rem auto;
+  margin: 2.4rem auto 3.2rem auto;
   display: grid;
   grid-template-columns: 55% 45%;
   box-shadow: 0rem 0.3rem 0.7rem rgba(51, 51, 51, 0.16); }
@@ -1757,7 +1757,10 @@ input[type="number"]::-webkit-outer-spin-button {
     .singleProduct__description-info-item {
       display: none; }
     .singleProduct__description-info .descriptionInfoActive {
-      display: block; }
+      display: block;
+      overflow-y: auto;
+      pointer-events: all;
+      height: 14rem; }
 
 .singleProduct__amount {
   display: flex;
@@ -1845,7 +1848,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .slideThumbs {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -6.5rem;
   z-index: 1000;
   cursor: pointer; }
   .slideThumbs img {

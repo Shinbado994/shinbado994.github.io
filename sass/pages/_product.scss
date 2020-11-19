@@ -2,7 +2,7 @@
   &__container {
     width: 120rem;
     height: 60rem;
-    margin: 3.2rem auto;
+    margin: 2.4rem auto 3.2rem auto;
     display: grid;
     grid-template-columns: 55% 45%;
     // column-gap: 2%;
@@ -124,6 +124,10 @@
       }
       .descriptionInfoActive {
         display: block;
+        overflow-y: auto;
+        pointer-events: all;
+        // overflow: scroll;
+        height: 14rem;
         // opacity: 1;
       }
     }
@@ -263,7 +267,7 @@
 .slideThumbs {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -6.5rem;
   z-index: 1000;
   cursor: pointer;
   img {
