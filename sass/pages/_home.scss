@@ -731,6 +731,8 @@
     &-links {
       display: flex;
       align-content: center;
+      // justify-content: center;
+
       a:visited,
       a:link {
         text-decoration: none;
@@ -751,6 +753,15 @@
       display: flex;
       align-items: center;
       font-size: 1.9rem;
+    }
+    &-social {
+      text-align: right;
+      width: 50%;
+      line-height: 1.5rem;
+      svg {
+        width: 2.8rem;
+        height: 2.8rem;
+      }
     }
   }
   &__slider {

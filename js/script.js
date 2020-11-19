@@ -593,11 +593,13 @@ if(document.querySelector('.gallery1') !== null){
 /////////////// Opis i Dimenzije promena
 const descButtons = document.querySelectorAll('.productDescriptions');
 function handleDescButtonClick(){
+  if(this !== document.querySelector('.descriptionActive')){
   const activeDesc = document.querySelector('.descriptionActive').classList.remove('descriptionActive');
   this.classList.add('descriptionActive');
   const activeInfoDesc = document.querySelector('.descriptionInfoActive');
   const notActiveInfoDesc = activeInfoDesc.previousElementSibling || activeInfoDesc.nextElementSibling;
   notActiveInfoDesc.classList.add('descriptionInfoActive');
   activeInfoDesc.classList.remove('descriptionInfoActive');
+  }
 }
 descButtons.forEach(descButton => descButton.addEventListener('click', handleDescButtonClick));
