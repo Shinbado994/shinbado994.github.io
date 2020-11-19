@@ -1700,7 +1700,42 @@ input[type="number"]::-webkit-outer-spin-button {
   border: 1px solid #e4e4e4;
   border-left: 0;
   padding: 2.4rem;
+  padding-top: 0rem;
   background-color: #eee; }
+  .singleProduct__right .discount {
+    width: 8rem;
+    height: 3rem; }
+    .singleProduct__right .discount span {
+      font-size: 2rem; }
+  .singleProduct__right .discount:after {
+    border-top: 2.5rem solid #fec156;
+    border-left: 4rem solid transparent;
+    border-right: 4rem solid transparent;
+    content: "";
+    height: 0;
+    right: 0;
+    position: absolute;
+    top: 3rem;
+    width: 5rem;
+    z-index: 100; }
+  .singleProduct__right .pointer {
+    width: 20rem;
+    height: 3rem;
+    top: 0.8rem;
+    text-align: left;
+    line-height: 2.8rem; }
+    .singleProduct__right .pointer span {
+      font-size: 1.7rem; }
+  .singleProduct__right .pointer:before {
+    content: "";
+    position: absolute;
+    right: -1.5rem;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 1.5rem solid #7f1f2c;
+    border-top: 1.5rem solid transparent;
+    border-bottom: 1.5rem solid transparent; }
 
 .singleProduct__photo {
   width: 100%;
@@ -1715,7 +1750,8 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0rem auto;
   display: block;
   border-spacing: 0rem;
-  margin-bottom: 2.4rem; }
+  margin-bottom: 1.2rem;
+  margin-top: 2.4rem; }
 
 .singleProduct-price {
   font-size: 2.4rem; }
@@ -1790,7 +1826,7 @@ input[type="number"]::-webkit-outer-spin-button {
   display: flex;
   align-items: center;
   margin-top: 2.4rem;
-  margin-bottom: 1.2rem; }
+  margin-bottom: 2.4rem; }
   .singleProduct__amount p {
     margin-right: 1.2rem; }
   .singleProduct__amount .favorite {

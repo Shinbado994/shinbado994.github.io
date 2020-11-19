@@ -40,8 +40,53 @@
     border: 1px solid $color-grey-light-1;
     border-left: 0;
     padding: 2.4rem;
+    padding-top: 0rem;
     background-color: $color-grey-light-2;
     // transform: translateX(0.1rem);
+
+    .discount {
+      width: 8rem;
+      height: 3rem;
+      // text-align: center;
+      span {
+        font-size: 2rem;
+      }
+    }
+    .discount:after {
+      border-top: 2.5rem solid $color-tertiary-dark;
+      border-left: 4rem solid transparent;
+      border-right: 4rem solid transparent;
+      content: "";
+      height: 0;
+      right: 0;
+      position: absolute;
+      top: 3rem;
+      width: 5rem;
+      z-index: 100;
+    }
+    .pointer {
+      width: 20rem;
+      height: 3rem;
+
+      top: 0.8rem;
+      text-align: left;
+      line-height: 2.8rem;
+      span {
+        font-size: 1.7rem;
+      }
+    }
+
+    .pointer:before {
+      content: "";
+      position: absolute;
+      right: -1.5rem;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      border-left: 1.5rem solid $color-tertiary-light;
+      border-top: 1.5rem solid transparent;
+      border-bottom: 1.5rem solid transparent;
+    }
   }
   &__photo {
     width: 100%;
@@ -57,7 +102,8 @@
     display: block;
     border-spacing: 0rem;
     // text-align: center;
-    margin-bottom: 2.4rem;
+    margin-bottom: 1.2rem;
+    margin-top: 2.4rem;
   }
   &-price {
     font-size: 2.4rem;
@@ -161,7 +207,7 @@
     display: flex;
     align-items: center;
     margin-top: 2.4rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 2.4rem;
     p {
       margin-right: 1.2rem;
     }
