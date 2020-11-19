@@ -1716,7 +1716,28 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .singleProduct-price {
   font-size: 2.4rem; }
-  .singleProduct-price span {
+  .singleProduct-price span:first-of-type {
+    color: #7f1f2c; }
+  .singleProduct-price span:last-of-type {
+    font-size: 2rem;
+    position: relative; }
+  .singleProduct-price span:last-of-type::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #333333;
+    position: absolute;
+    bottom: 1.2rem;
+    left: 0; }
+
+.singleProduct-code {
+  margin-top: 0.4rem; }
+
+.singleProduct__delivery {
+  margin-bottom: 1.2rem; }
+  .singleProduct__delivery p {
+    font-size: 2rem;
+    text-transform: uppercase;
     color: #7f1f2c; }
 
 .singleProduct__description {
@@ -1766,10 +1787,11 @@ input[type="number"]::-webkit-outer-spin-button {
   display: flex;
   align-items: center;
   margin-top: 2.4rem;
-  margin-bottom: 2.4rem; }
+  margin-bottom: 1.2rem; }
   .singleProduct__amount p {
     margin-right: 1.2rem; }
   .singleProduct__amount .favorite {
+    margin-left: 2.4rem;
     display: flex;
     align-items: center; }
     .singleProduct__amount .favorite svg {

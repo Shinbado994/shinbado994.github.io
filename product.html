@@ -1346,7 +1346,9 @@
                     <img
                       src="img/product1/1.jpg"
                       alt="Pozadina"
-                      class="backgroundimage"
+                      class="backgroundimage zoom_07"
+                      data-zoom-image="img/product1/1.jpg"
+                    />
                     />
                   </span>
                 </div>
@@ -1355,7 +1357,8 @@
                     <img
                       src="img/product1/2.jpg"
                       alt="Pozadina"
-                      class="backgroundimage"
+                      class="backgroundimage zoom_07"
+                      data-zoom-image="img/product1/2.jpg"
                     />
                   </span>
                 </div>
@@ -1364,7 +1367,8 @@
                     <img
                       src="img/product1/3.jpg"
                       alt="Pozadina"
-                      class="backgroundimage"
+                      class="backgroundimage zoom_07"
+                      data-zoom-image="img/product1/3.jpg"
                     />
                   </span>
                 </div>
@@ -1373,7 +1377,8 @@
                     <img
                       src="img/product1/4.jpg"
                       alt="Pozadina"
-                      class="backgroundimage"
+                      class="backgroundimage zoom_07"
+                      data-zoom-image="img/product1/4.jpg"
                     />
                   </span>
                 </div>
@@ -1382,7 +1387,8 @@
                     <img
                       src="img/product1/5.jpg"
                       alt="Pozadina"
-                      class="backgroundimage"
+                      class="backgroundimage zoom_07"
+                      data-zoom-image="img/product1/5.jpg"
                     />
                   </span>
                 </div>
@@ -1393,7 +1399,11 @@
         <div class="singleProduct__right">
           <div class="singleProduct__info">
             <h1>Plavi kofer, Gabol</h1>
-            <p class="singleProduct-price">Cena: <span>23.405,00 DIN</span></p>
+            <p class="singleProduct-price">
+              Cena: <span>23.405,00 DIN</span>
+              <span class="product-oldPrice">30.000,00 DIN</span>
+            </p>
+            <p class="singleProduct-code">Šifra: <span>E2E4E7E6</span></p>
             <div class="singleProduct__description">
               <div
                 class="singleProduct__description-left productDescriptions descriptionActive"
@@ -1443,15 +1453,6 @@
               </div>
               <div class="favorite">
                 <!-- <p>Dodaj u favorite:</p> -->
-                <!-- <p>Ukloni iz favorita:</p>
-                <svg class="product_svg activeSvg">
-                  <use xlink:href="img/sprite.svg#icon-star-full"></use>
-                </svg> -->
-              </div>
-            </div>
-            <div class="singleProduct__amount">
-              <div class="favorite">
-                <!-- <p>Dodaj u favorite:</p> -->
                 <p>Dodaj u favorite:</p>
                 <!-- <p>Ukloni iz favorita:</p> -->
                 <!-- <svg class="product_svg activeSvg">
@@ -1461,6 +1462,9 @@
                   <use xlink:href="img/sprite.svg#icon-star-full"></use>
                 </svg>
               </div>
+            </div>
+            <div class="singleProduct__delivery">
+              <p>Besplatna dostava</p>
             </div>
             <div class="singleProduct__amount-button button">
               <a class="button" href="#">
@@ -1929,22 +1933,42 @@
       <use xlink:href="img/sprite.svg#icon-cart22"></use>
     </svg> -->
 
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+    <!-- <script src="js/jquery.zoom.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".ex1").zoom({ duration: 0, magnify: 3 });
+        // $("#ex2").zoom({ on: "grab" });
+      });
+    </script> -->
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+
     <script
       src="https://code.jquery.com/jquery-2.2.4.min.js"
       integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
       crossorigin="anonymous"
     ></script>
-    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
-    <script src="js/jquery.zoom.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".ex1").zoom({ duration: 120, magnify: 2 });
-        // $("#ex2").zoom({ on: "grab" });
-      });
-    </script>
-    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+    <script type="text/javascript" src="js/jquery.ez-plus.js"></script>
+    <script type="text/javascript" src="js/web.js?m=20100203"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/gh/igorlino/snippet-helper@1.0.1/src/snippet-helper.js"
+    ></script>
     <script src="slick/slick.min.js"></script>
+    <!-- <script>
+      var snippets = [{ code: "code-ezp-e07", ext: "html,js" }];
+      $(document).ready(function () {
+        snippetHelper.loadSnippets(snippets);
+      });
+    </script> -->
+    <!-- <script>
+      $(".zoom_07").ezPlus({
+        zoomType: "lens",
+        lensShape: "round",
+        lensSize: 150,
+      });
+    </script> -->
 
     <script src="js/script.js"></script>
   </body>
