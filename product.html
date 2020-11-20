@@ -1323,7 +1323,7 @@
                   <use xlink:href="img/sprite.svg#icon-navigate_next"></use>
                 </svg>
               </div>
-              <div class="slideThumbs">
+              <div class="slideThumbs" id="gallery_01">
                 <div class="thumbs" data-thumb="1">
                   <img src="img/product1/1.jpg" alt="Pozadina" />
                 </div>
@@ -1341,19 +1341,21 @@
                 </div>
               </div>
               <div class="slides gallery1">
-                <div class="slide current gallerySlide" data-slide="1">
-                  <span class="zoom ex1">
+                <div class="slide current gallerySlide ex1" data-slide="1">
+                  <span class="zoom">
                     <img
                       src="img/product1/1.jpg"
                       alt="Pozadina"
                       class="backgroundimage zoom_01"
                       data-zoom-image="img/product1/1.jpg"
                     />
-                    />
                   </span>
+                  <!-- <span class="zoom">
+                    
+                  </span> -->
                 </div>
-                <div class="slide gallerySlide" data-slide="2">
-                  <span class="zoom ex1">
+                <div class="slide gallerySlide ex1" data-slide="2">
+                  <span class="zoom">
                     <img
                       src="img/product1/2.jpg"
                       alt="Pozadina"
@@ -1362,8 +1364,8 @@
                     />
                   </span>
                 </div>
-                <div class="slide gallerySlide" data-slide="3">
-                  <span class="zoom ex1">
+                <div class="slide gallerySlide ex1" data-slide="3">
+                  <span class="zoom">
                     <img
                       src="img/product1/3.jpg"
                       alt="Pozadina"
@@ -1372,8 +1374,8 @@
                     />
                   </span>
                 </div>
-                <div class="slide gallerySlide" data-slide="4">
-                  <span class="zoom ex1">
+                <div class="slide gallerySlide ex1" data-slide="4">
+                  <span class="zoom">
                     <img
                       src="img/product1/4.jpg"
                       alt="Pozadina"
@@ -1382,8 +1384,8 @@
                     />
                   </span>
                 </div>
-                <div class="slide gallerySlide" data-slide="5">
-                  <span class="zoom ex1">
+                <div class="slide gallerySlide ex1" data-slide="5">
+                  <span class="zoom">
                     <img
                       src="img/product1/5.jpg"
                       alt="Pozadina"
@@ -1945,7 +1947,7 @@
     <!-- <script src="js/jquery.zoom.js"></script>
     <script>
       $(document).ready(function () {
-        $(".ex1").zoom({ duration: 0, magnify: 3 });
+        $(".ex1").zoom({ duration: 120, magnify: 3 });
         // $("#ex2").zoom({ on: "grab" });
       });
     </script> -->
@@ -1957,12 +1959,19 @@
       integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript" src="js/jquery.ez-plus.js"></script>
+    <script src="js/jquery.zoom.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".ex1").zoom();
+        // $("#ex2").zoom({ on: "grab" });
+      });
+    </script>
+    <!-- <script type="text/javascript" src="js/jquery.ez-plus.js"></script>
     <script type="text/javascript" src="js/web.js?m=20100203"></script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/gh/igorlino/snippet-helper@1.0.1/src/snippet-helper.js"
-    ></script>
+    ></script> -->
     <script src="slick/slick.min.js"></script>
     <!-- <script>
       var snippets = [{ code: "code-ezp-e07", ext: "html,js" }];
@@ -1971,14 +1980,20 @@
       });
     </script> -->
     <script>
-      $(".zoom_01").ezPlus({
-        //   zoomType: "lens",
-        //   lensShape: "round",
-        //   lensSize: 400,
-        // });
-        zoomType: "inner",
-        cursor: "crosshair",
-      });
+      const currentSliderImg = document.querySelector(".current");
+      let zoomSliderImg = currentSliderImg.querySelector(".zoom_07");
+
+      // $(".zoom_01").ezPlus({
+      //   gallery: "gallery_01",
+      //   cursor: "pointer",
+      //   galleryActiveClass: "active",
+      //   imageCrossfade: true,
+      //   // zoomType: "lens",
+      //   // lensShape: "round",
+      //   // lensSize: 150,
+      //   zoomType: "inner",
+      //   cursor: "crosshair",
+      // });
     </script>
 
     <script src="js/script.js"></script>

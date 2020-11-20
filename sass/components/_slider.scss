@@ -36,12 +36,14 @@
   /* transform: translateX(-100%); */
   opacity: 0;
 }
+
 .slide.current {
   z-index: 10;
   transform: translateX(0);
   opacity: 1;
   pointer-events: all;
 }
+
 .slide.next {
   z-index: 10;
   /* transform: translateX(100%); */

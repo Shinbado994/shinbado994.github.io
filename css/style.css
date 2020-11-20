@@ -1699,8 +1699,10 @@ input[type="number"]::-webkit-outer-spin-button {
     width: 100%;
     height: 100%; }
   .singleProduct__left .slide img {
-    width: 100%;
-    height: 100%; }
+    transition: none !important; }
+  .singleProduct__left .zoom {
+    position: relative;
+    overflow: hidden; }
   .singleProduct__left svg {
     fill: #7f1f2c; }
 

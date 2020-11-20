@@ -40,7 +40,7 @@ function Slider(slider, intTime) {
   Slider.prototype.changeOnClick = function (thumb) {
     thumbId = thumb.dataset['thumb'];
     const classesToRemove = ['prev', 'current', 'next'];
-    console.log(this.prev, this.current, this.next);
+    // console.log(this.prev, this.current, this.next);
     this.prev.classList.remove(...classesToRemove);
     this.current.classList.remove(...classesToRemove);
     this.next.classList.remove(...classesToRemove);
@@ -51,6 +51,7 @@ function Slider(slider, intTime) {
     this.current.classList.add('current');
     this.prev.classList.add('prev');
     this.next.classList.add('next');
+    
   };
   Slider.prototype.startSlider = function () {
     this.current =
