@@ -432,3 +432,6 @@
   opacity: 1;
   pointer-events: all;
 }
+body.openModal {
+  overflow-y: hidden;
+}

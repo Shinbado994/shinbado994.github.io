@@ -527,6 +527,7 @@ function Gallery(gallery){
       return;
     }
     modal.classList.add('openModal');
+    document.querySelector('body').classList.add('openModal');
     // console.log('open Modal works');
     window.addEventListener('keyup', handleKeyUp);
     nextButton.addEventListener('click', showNextImage);
@@ -534,6 +535,7 @@ function Gallery(gallery){
   }
   function closeModal() {
     modal.classList.remove('openModal');
+    document.querySelector('body').classList.remove('openModal');
     window.removeEventListener('keyup', handleKeyUp);
     nextButton.removeEventListener('click', showNextImage);
     prevButton.removeEventListener('click', showPrevImage);
