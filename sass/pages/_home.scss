@@ -946,7 +946,9 @@ body.openModal2 .header__nav {
   // grid-template-columns: 50px 1fr 50px;
   color: black;
   z-index: 1999;
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  // left: 0;
   user-select: none;
   background-color: $color-white;
   pointer-events: all;

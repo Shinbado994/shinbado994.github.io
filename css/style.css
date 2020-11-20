@@ -1359,7 +1359,8 @@ body.openModal2 .header__nav {
   display: grid;
   color: black;
   z-index: 1999;
-  position: relative;
+  position: absolute;
+  bottom: 0;
   user-select: none;
   background-color: #fefefe;
   pointer-events: all; }
