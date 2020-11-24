@@ -684,11 +684,12 @@
 
           width: 26.4rem;
         }
+        //menjaza
         a.navlinks:link,
         a.navlinks:visited {
           text-decoration: none;
           color: $color-black;
-          font-size: 1.7rem;
+          font-size: 2rem;
         }
         a.navlinks {
           display: flex;
@@ -720,8 +721,9 @@
           fill: $color-grey-light-1;
         }
       }
+      /// menjaza
       p {
-        font-size: 2rem;
+        font-size: 2.5rem;
       }
     }
 

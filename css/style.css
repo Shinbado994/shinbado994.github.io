@@ -1174,7 +1174,7 @@ body {
       .header__nav-nav-navbar a.navlinks:visited {
         text-decoration: none;
         color: #333333;
-        font-size: 1.7rem; }
+        font-size: 2rem; }
       .header__nav-nav-navbar a.navlinks {
         display: flex;
         justify-content: space-between;
@@ -1196,7 +1196,7 @@ body {
       .header__nav-nav-navbar a.navlinks.active svg {
         fill: #e4e4e4; }
     .header__nav-nav p {
-      font-size: 2rem; }
+      font-size: 2.5rem; }
   .header__nav svg {
     width: 2.5rem;
     height: 2.5rem;
