@@ -337,7 +337,7 @@ $(document).ready(function(){
 });
 
 
-///// Scrolll
+///// Scroll
 
 function debounce(func, wait = 20, immediate = true){
   var timeout;

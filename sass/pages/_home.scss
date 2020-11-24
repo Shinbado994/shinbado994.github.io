@@ -2,7 +2,7 @@
   // transition: all 2s;
   &__top {
     // transition: all 0.5s;
-    width: 120rem;
+    max-width: 120rem;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -688,6 +688,7 @@
         a.navlinks:visited {
           text-decoration: none;
           color: $color-black;
+          font-size: 1.7rem;
         }
         a.navlinks {
           display: flex;
@@ -720,7 +721,7 @@
         }
       }
       p {
-        font-size: 1.8rem;
+        font-size: 2rem;
       }
     }
 
