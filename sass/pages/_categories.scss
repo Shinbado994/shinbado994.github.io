@@ -104,5 +104,23 @@
         }
       }
     }
+    &-bottom {
+      text-align: center;
+      margin-top: 0.8rem;
+      button {
+        width: 10rem;
+        padding: 0.8rem;
+        background-color: $color-tertiary-light;
+        border-radius: 0.5rem;
+        outline: none;
+        margin-top: 0.8rem;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.134),
+          0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.1);
+        color: $color-white;
+        margin-bottom: 0.4rem;
+      }
+    }
   }
 }
