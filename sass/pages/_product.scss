@@ -1,4 +1,12 @@
 .singleProduct {
+  .header__slider-left {
+    left: 8rem;
+    z-index: 1000;
+  }
+  .header__slider-right {
+    right: 2rem;
+    z-index: 1000;
+  }
   &__container {
     width: 120rem;
     height: 60rem;
@@ -360,14 +368,6 @@
     border: 1px solid $color-grey-light-1;
     border-radius: 4rem;
   }
-}
-.header__slider-left {
-  left: 8rem;
-  z-index: 1000;
-}
-.header__slider-right {
-  right: 2rem;
-  z-index: 1000;
 }
 
 .modal {

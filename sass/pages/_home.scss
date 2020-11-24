@@ -547,8 +547,10 @@
     }
     &-nav {
       background-color: $color-grey-light-2;
-      padding: 0.6rem;
-      margin-right: 2.4rem;
+      // padding: 0.6rem;
+      padding-bottom: 0.5rem;
+      // padding-top: ;
+      // margin-right: 2.4rem;
       text-transform: uppercase;
       font-family: $font-heading;
       // text-align: center;
@@ -557,7 +559,7 @@
       align-items: center;
       font-weight: normal;
       // justify-content: ce
-      margin-top: 0.3rem;
+      // margin-top: 0.3rem;
       box-shadow: 0px -0.3rem 0.5rem 0px rgba($color-black, 0.2);
       &-menu {
         div {
@@ -571,8 +573,8 @@
       }
       &-products {
         position: absolute;
-        top: 0;
-        left: 25.3rem;
+        top: 0rem;
+        left: 28.8rem;
         background-color: $color-white;
         width: 28rem;
         // height: 30rem;
@@ -682,14 +684,14 @@
         ul {
           list-style-type: none;
 
-          width: 26.4rem;
+          width: 28.8rem;
         }
         //menjaza
         a.navlinks:link,
         a.navlinks:visited {
           text-decoration: none;
           color: $color-black;
-          font-size: 2.3rem;
+          font-size: 2.1rem;
         }
         a.navlinks {
           display: flex;
@@ -723,7 +725,7 @@
       }
       /// menjaza
       p {
-        font-size: 2.8rem;
+        font-size: 2.6rem;
       }
     }
 
@@ -753,6 +755,7 @@
       display: flex;
       margin-right: 5rem;
       align-items: center;
+      margin-left: 2.4rem;
     }
     &-mail {
       display: flex;
