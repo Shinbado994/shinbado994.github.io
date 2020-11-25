@@ -1,9 +1,10 @@
 .hamburger {
   display: none;
   position: absolute;
-  top: 3rem;
+  top: 3.2rem;
   left: 2.5rem;
   z-index: 9999;
+  font-family: $font-heading;
 }
 .openHamburger {
   .hamburger span {
@@ -18,7 +19,7 @@
     z-index: 1000;
   }
   .openHamburgerRight {
-    margin-left: 4rem;
+    margin-left: 4.2rem;
     margin-top: 0.3rem;
     // line-height: 1.2rem;
   }
@@ -27,7 +28,7 @@
   position: absolute;
   display: block;
 
-  top: 1rem;
+  top: 1.2rem;
   left: 1.1rem;
   z-index: 9999;
 
@@ -49,7 +50,7 @@
   .header__nav-nav-navbar {
     right: auto;
     left: -1.1rem;
-    top: 3rem;
+    top: 2.7rem;
     z-index: 100000000 !important;
 
     // opacity: 0;

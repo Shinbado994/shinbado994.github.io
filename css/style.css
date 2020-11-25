@@ -395,9 +395,10 @@ body {
 .hamburger {
   display: none;
   position: absolute;
-  top: 3rem;
+  top: 3.2rem;
   left: 2.5rem;
-  z-index: 9999; }
+  z-index: 9999;
+  font-family: "Blinker", sans-serif; }
 
 .openHamburger .hamburger span {
   background: #7f1f2c; }
@@ -410,13 +411,13 @@ body {
   z-index: 1000; }
 
 .openHamburger .openHamburgerRight {
-  margin-left: 4rem;
+  margin-left: 4.2rem;
   margin-top: 0.3rem; }
 
 .openHamburger .hamburger {
   position: absolute;
   display: block;
-  top: 1rem;
+  top: 1.2rem;
   left: 1.1rem;
   z-index: 9999; }
   .openHamburger .hamburger .closeProduct:after {
@@ -431,7 +432,7 @@ body {
   .openHamburger .hamburger .header__nav-nav-navbar {
     right: auto;
     left: -1.1rem;
-    top: 3rem;
+    top: 2.7rem;
     z-index: 100000000 !important; }
     .openHamburger .hamburger .header__nav-nav-navbar ul {
       z-index: 9999; }
@@ -1021,7 +1022,7 @@ body {
   .header__top.fixed .header__nav-nav-navbar {
     right: auto;
     left: -2.5rem;
-    top: 5rem; }
+    top: 4.8rem; }
   .header__top.fixed .logoImg {
     margin-top: 1.9rem;
     width: 26rem;
@@ -1072,7 +1073,7 @@ body {
     height: 4rem; }
   .header__nav-nav {
     background-color: #eee;
-    padding-bottom: 0.5rem;
+    padding: 0.35rem 0rem;
     text-transform: uppercase;
     font-family: "Blinker", sans-serif;
     position: relative;
@@ -1171,7 +1172,7 @@ body {
       .header__nav-nav-navbar a.navlinks:visited {
         text-decoration: none;
         color: #333333;
-        font-size: 2.1rem; }
+        font-size: 2rem; }
       .header__nav-nav-navbar a.navlinks {
         display: flex;
         justify-content: space-between;
@@ -1193,7 +1194,7 @@ body {
       .header__nav-nav-navbar a.navlinks.active svg {
         fill: #e4e4e4; }
     .header__nav-nav p {
-      font-size: 2.5rem; }
+      font-size: 2.4rem; }
   .header__nav svg {
     width: 2.5rem;
     height: 2.5rem;
