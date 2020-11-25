@@ -175,6 +175,8 @@ function Slider(slider, intTime) {
         else{
           
           document.querySelector('.openProducts') !== null && document.querySelector('.openProducts').classList.remove('openProducts');
+          if(  document.querySelector('.active') != null){document.querySelector('.active').classList.remove('active');}
+          
           clicked = 0;
         }
         // console.log(input.name);

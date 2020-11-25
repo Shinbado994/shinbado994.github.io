@@ -1073,7 +1073,7 @@ body {
     height: 4rem; }
   .header__nav-nav {
     background-color: #eee;
-    padding: 0.35rem 0rem;
+    padding: 0.4rem 0rem;
     text-transform: uppercase;
     font-family: "Blinker", sans-serif;
     position: relative;
@@ -1194,7 +1194,7 @@ body {
       .header__nav-nav-navbar a.navlinks.active svg {
         fill: #e4e4e4; }
     .header__nav-nav p {
-      font-size: 2.4rem; }
+      font-size: 2.3rem; }
   .header__nav svg {
     width: 2.5rem;
     height: 2.5rem;
