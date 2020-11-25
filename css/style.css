@@ -1316,13 +1316,12 @@ body {
     align-content: center;
     text-align: center;
     grid-template-columns: 1fr 1fr;
-    row-gap: 1.2rem; }
+    row-gap: 1.2rem;
+    column-gap: 0.8rem; }
     .footer__social svg {
       width: 6rem;
       height: 6rem;
       fill: #7f1f2c; }
-    .footer__social svg:first-of-type {
-      margin-right: 1.6rem; }
     .footer__social p {
       font-size: 2rem;
       grid-column-start: 1;
@@ -1892,6 +1891,7 @@ input[type="number"]::-webkit-outer-spin-button {
   margin-top: 2.4rem; }
 
 .singleProduct-price {
+  font-family: "Blinker", sans-serif;
   font-size: 2.4rem; }
   .singleProduct-price span:first-of-type {
     color: #7f1f2c; }

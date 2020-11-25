@@ -897,15 +897,17 @@
     text-align: center;
     grid-template-columns: 1fr 1fr;
     row-gap: 1.2rem;
+    column-gap: 0.8rem;
     svg {
       width: 6rem;
       height: 6rem;
       fill: $color-tertiary-light;
     }
     svg:first-of-type {
-      margin-right: 1.6rem;
+      // margin-right: 1.6rem;
     }
     p {
+      // margin-right: 0.8rem;
       font-size: 2rem;
       grid-column-start: 1;
       grid-column-end: 3;
