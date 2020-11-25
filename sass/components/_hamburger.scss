@@ -5,6 +5,13 @@
   left: 2.5rem;
   z-index: 9999;
   font-family: $font-heading;
+  @media only screen and (max-width: $bp-small-1) {
+    top: 9rem;
+  }
+  @media only screen and (max-width: $bp-small-2) {
+    top: 8.6rem;
+    left: 1.2rem;
+  }
 }
 .openHamburger {
   .hamburger span {
@@ -50,6 +57,7 @@
   .header__nav-nav-navbar {
     right: auto;
     left: -1.1rem;
+
     top: 2.7rem;
     z-index: 100000000 !important;
 
