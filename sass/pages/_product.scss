@@ -1,4 +1,9 @@
 .singleProduct {
+  @media only screen and (max-width: $bp-large) {
+    .header__slider {
+      display: block;
+    }
+  }
   .header__slider-left {
     left: 8rem;
     z-index: 1000;
@@ -8,16 +13,42 @@
     z-index: 1000;
   }
   &__container {
-    width: 120rem;
+    max-width: 120rem;
     height: 60rem;
     margin: 2.4rem auto 3.2rem auto;
     display: grid;
     grid-template-columns: 55% 45%;
+    @media only screen and (max-width: $bp-suplarge) {
+      grid-template-columns: 100%;
+      box-shadow: none;
+      justify-items: center;
+      height: auto;
+    }
     // column-gap: 2%;
     box-shadow: 0rem 0.3rem 0.7rem rgba($color-black, 0.16);
   }
   &__left {
     // border: 1px solid $color-tertiary-dark;
+    @media only screen and (max-width: $bp-suplarge) {
+      width: 70rem;
+      height: 70rem;
+      margin-bottom: 3.2rem;
+      border-right: 1px solid $color-grey-light-1;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      width: 50rem;
+      height: 50rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      width: 40rem;
+      height: 40rem;
+      .backgroundimage {
+        min-height: unset;
+      }
+    }
+    @media only screen and (max-width: $bp-small-2) {
+      margin-bottom: 8.8rem;
+    }
     border: 1px solid $color-grey-light-1;
     background-color: $color-white;
     border-right: 0;
@@ -56,6 +87,18 @@
   }
   &__right {
     // border: 1px solid $color-tertiary-light;
+    @media only screen and (max-width: $bp-suplarge) {
+      width: 70rem;
+    }
+    @media only screen and (max-width: $bp-medium-2) {
+      width: 50rem;
+    }
+    @media only screen and (max-width: $bp-small-2) {
+      width: 40rem;
+      padding: 1.2rem;
+      padding-top: 0rem;
+    }
+
     border: 1px solid $color-grey-light-1;
     border-left: 0;
     padding: 2.4rem;
@@ -233,6 +276,9 @@
     margin-bottom: 2.4rem;
     p {
       margin-right: 1.2rem;
+      @media only screen and (max-width: $bp-small-2) {
+        margin-right: 0.4rem;
+      }
     }
     .favorite {
       margin-left: 2.4rem;
@@ -361,20 +407,55 @@
   position: absolute;
   top: 0;
   left: -6.5rem;
-  z-index: 1000;
+  z-index: 100;
+  @media only screen and (max-width: $bp-suplarge) {
+    left: -8.5rem;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    left: -7.5rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    left: -6.5rem;
+  }
+  @media only screen and (max-width: $bp-small-2) {
+    bottom: -8.8rem;
+    left: 0rem;
+    top: unset;
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+    width: 36rem;
+  }
   cursor: pointer;
   img {
     width: 6rem;
     height: 6rem;
     border: 1px solid $color-grey-light-1;
     border-radius: 4rem;
+    @media only screen and (max-width: $bp-suplarge) {
+      width: 8rem;
+      height: 8rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      width: 7rem;
+      height: 7rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      width: 6rem;
+      height: 6rem;
+    }
+    @media only screen and (max-width: $bp-small-2) {
+      width: 7.5rem;
+      height: 7.5rem;
+      margin-right: 0.6rem;
+    }
   }
 }
 
 .modal {
   position: fixed;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 2000;
+  z-index: 20000;
   top: 0;
   right: 0;
   bottom: 0;
@@ -393,6 +474,11 @@
   // transform: translateY(-100vh);
   transition: all 0.5s;
   max-width: 120rem;
+  @media only screen and (max-width: $bp-medium-2) {
+    // height: unset;
+    width: 100%;
+    // height: 100%;
+  }
   // height: calc(100vh - 100px);
   display: grid;
   // grid-template-columns: 50px 1fr 50px;
@@ -408,12 +494,26 @@
     height: 75rem;
     // width: 50%;
     // height: 85rem;
+    @media only screen and (max-width: $bp-medium-2) {
+      // height: unset;
+      width: 100%;
+      height: 100%;
+    }
   }
 
   &-left,
   &-right {
     position: absolute;
-    top: 25rem;
+    top: 50%;
+    margin-top: -10rem;
+    @media only screen and (max-width: $bp-medium-2) {
+      // height: unset;
+
+      width: 5rem;
+      height: 5rem;
+      margin-top: -7.5rem;
+    }
+    // margin: auto 0;
 
     z-index: 2000;
     svg {
@@ -421,6 +521,13 @@
       width: 10rem;
       height: 10rem;
       cursor: pointer;
+      @media only screen and (max-width: $bp-medium-2) {
+        // height: unset;
+
+        width: 5rem;
+        height: 5rem;
+        // margin-top: -5rem;
+      }
     }
   }
   &-left {

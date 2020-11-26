@@ -1,9 +1,13 @@
 .user {
   &__container {
     margin: 3.2rem auto;
-    width: 120rem;
+    max-width: 120rem;
     display: grid;
     grid-template-columns: 25% 73%;
+    @media only screen and (max-width: $bp-largest) {
+      grid-template-columns: 100%;
+      justify-items: center;
+    }
     column-gap: 2%;
     h3 {
       font-weight: normal;
@@ -15,6 +19,16 @@
   &__left {
     // background-color: red;
     &-info {
+      @media only screen and (max-width: $bp-largest) {
+        width: 40rem;
+        margin-bottom: 1.6rem;
+        // text-align: ;
+      }
+      @media only screen and (max-width: $bp-small-1) {
+        width: 36rem;
+        margin-bottom: 1.6rem;
+        // text-align: ;
+      }
       border: 1px solid $color-tertiary-light;
       border-radius: 0.4rem;
       padding: 1.2rem;
@@ -49,6 +63,22 @@
     // background-color: blue;
     table {
       width: 100%;
+      @media only screen and (max-width: $bp-largest) {
+        width: 80rem;
+        // text-align: ;
+      }
+      @media only screen and (max-width: $bp-medium) {
+        width: 50rem;
+        // text-align: ;
+      }
+      @media only screen and (max-width: $bp-small-1) {
+        width: 32rem;
+        th {
+          font-size: 1.4rem;
+          padding: 0.4rem 0.8rem;
+        }
+        // text-align: ;
+      }
     }
 
     // .seeBuy {

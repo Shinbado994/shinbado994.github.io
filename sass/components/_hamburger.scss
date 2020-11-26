@@ -5,6 +5,14 @@
   left: 2.5rem;
   z-index: 9999;
   font-family: $font-heading;
+  @media only screen and (max-width: $bp-largest) {
+    top: 8.5rem;
+    left: 1.2rem;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    top: 3.2rem;
+    left: 2.5rem;
+  }
   @media only screen and (max-width: $bp-small-1) {
     top: 9rem;
   }

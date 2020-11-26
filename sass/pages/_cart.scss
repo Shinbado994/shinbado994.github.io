@@ -29,7 +29,10 @@
     margin: 0 auto;
   }
   &__container.cart3 {
-    width: 80rem;
+    max-width: 80rem;
+    @media only screen and (max-width: $bp-large) {
+      padding: 0 1.2rem;
+    }
 
     p {
       margin-bottom: 0.8rem;

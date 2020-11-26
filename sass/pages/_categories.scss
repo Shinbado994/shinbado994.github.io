@@ -2,7 +2,7 @@
   background-color: $color-white;
   &__container {
     padding-top: 1.2rem;
-    width: 120rem;
+    max-width: 120rem;
     margin: 0 auto;
 
     h1 {
@@ -17,6 +17,12 @@
     ul {
       list-style-type: none;
       display: flex;
+      @media only screen and (max-width: $bp-large) {
+        margin-left: 1.2rem;
+      }
+      @media only screen and (max-width: $bp-small) {
+        font-size: 1.4rem;
+      }
     }
 
     li {
