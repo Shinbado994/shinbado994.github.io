@@ -119,12 +119,42 @@ function Slider(slider, intTime) {
   const navlinks = document.querySelectorAll('.navlinks');
   function handleNavClick(e){
     // const products = document.querySelectorAll('.header__nav-nav-products');
-    navlinks.forEach(link => link.classList.remove('active'));
-    e.currentTarget.classList.add('active');
-    prod.forEach(product => product.classList.remove('openProducts'));
-    e.currentTarget.parentNode.lastElementChild.classList.add('openProducts');
+    // navlinks.forEach(link => link.classList.remove('active'));
+    if(e.currentTarget.classList.contains('active')){
+      // console.log(e.currentTarget);
+      e.currentTarget.removeEventListener('click',removeActiveClass);
+      e.currentTarget.classList.remove('active');
+      e.currentTarget.parentNode.lastElementChild.classList.remove('openProducts');
+    }
+    else{
+      const activeItem = document.querySelector('.active');
+    if(activeItem != null){
+      activeItem.removeEventListener('click',removeActiveClass);
+      activeItem.classList.remove('active');
+    }
+      navlinks.forEach(link => link.classList.remove('active'));
+      e.currentTarget.classList.add('active');
+      prod.forEach(product => product.classList.remove('openProducts'));
+      e.currentTarget.parentNode.lastElementChild.classList.add('openProducts');
+      e.currentTarget.addEventListener('click',removeActiveClass);
+    }
+    // const activeItem = document.querySelector('.active');
+    // if(activeItem != null){
+    //   activeItem.removeEventListener('click',removeActiveClass);
+    //   activeItem.classList.remove('active');
+    // }
     clicked = 1;
     
+    
+    
+    // e.currentTarget.removeEventListener('click',removeActiveClass);
+    
+  }
+  function removeActiveClass(){
+    // console.log(this);
+    this.classList.remove('active');
+    this.parentNode.lastElementChild.classList.remove('openProducts');
+    this.removeEventListener('click',removeActiveClass);
   }
   hamburgers.forEach(hamburger => hamburger.addEventListener('click',function(){
     clicked=3;
@@ -146,15 +176,20 @@ function Slider(slider, intTime) {
 
    }
    else if (clicked === 2){
-    // console.log('Usao');
+    console.log('Usao u dvojku');
     if(document.querySelector('.openProducts') !== null){
       if(e.target !== document.querySelector('.openProducts') && !document.querySelector('.openProducts').contains(e.target)){
         // !document.querySelector('.openProducts').contains(e.target)
         // console.log(document.querySelector('.openProducts'));
         // console.log();
-        navlinks.forEach(link => link.classList.remove('active'));
+        const activeItem = document.querySelector('.active');
+        if(activeItem != null){
+          activeItem.removeEventListener('click',removeActiveClass);
+          activeItem.classList.remove('active');
+        }
+        // navlinks.forEach(link => link.classList.remove('active'));
      
-        document.querySelector('.openProducts').classList.remove('openProducts');
+        // document.querySelector('.openProducts').classList.remove('openProducts');
         clicked = 0;
        }
        
@@ -162,11 +197,11 @@ function Slider(slider, intTime) {
      
     }
     else if(clicked === 3){
-      // console.log('Ovo je trojka');
+      console.log('Ovo je trojka');
       clicked ++;
     }
     else if (clicked === 4){
-      // console.log('Ovo je cetvorka');
+      console.log('Ovo je cetvorka');
       // inputs.forEach(input => input.checked = false);
       inputs.forEach(input => {
         if(input.name !== 'checkMenu'){
@@ -175,7 +210,10 @@ function Slider(slider, intTime) {
         else{
           
           document.querySelector('.openProducts') !== null && document.querySelector('.openProducts').classList.remove('openProducts');
-          if(  document.querySelector('.active') != null){document.querySelector('.active').classList.remove('active');}
+          if(  document.querySelector('.active') != null){
+            document.querySelector('.active').removeEventListener('click',removeActiveClass);
+            document.querySelector('.active').classList.remove('active'); 
+          }
           
           clicked = 0;
         }
@@ -197,7 +235,12 @@ function Slider(slider, intTime) {
  
  function handleCloseClick(e){
    e.currentTarget.parentNode.classList.remove('openProducts');
-   navlinks.forEach(link => link.classList.remove('active'));
+  //  navlinks.forEach(link => link.classList.remove('active'));
+  const activeItem = document.querySelector('.active');
+  if(activeItem != null){
+    activeItem.removeEventListener('click',removeActiveClass);
+    activeItem.classList.remove('active');
+  }
   //  console.log(e.currentTarget.parentNode.parentNode);
   //  console.log(e.current);
  }

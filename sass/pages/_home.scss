@@ -1,5 +1,6 @@
 .header {
   // transition: all 2s;
+
   &__top {
     // transition: all 0.5s;
     @media only screen and (max-width: $bp-largest) {
@@ -224,6 +225,8 @@
     &-icons {
       justify-self: right;
       display: flex;
+      margin-right: 0rem !important;
+
       svg {
         width: 3.6rem;
         height: 3.6rem;
@@ -249,12 +252,16 @@
       }
       &-user {
         position: relative;
+
         .openUser {
           position: absolute;
           width: 25rem;
           // background-color: $color-white;
           // height: 20rem;
-          left: -18.2rem;
+          left: -18.2;
+          @media only screen and (max-width: $bp-medium) {
+            left: -22rem;
+          }
           top: 5rem;
           z-index: 1000;
           // display: none;
@@ -340,6 +347,9 @@
           content: " ";
           position: absolute;
           right: 4rem;
+          @media only screen and (max-width: $bp-medium) {
+            right: 0.5rem;
+          }
           top: -1rem;
           border-top: none;
           border-right: 1.1rem solid transparent;
@@ -396,6 +406,10 @@
 
         .openCart,
         .openStar {
+          @media only screen and (max-width: $bp-medium) {
+            display: none;
+          }
+
           position: absolute;
           width: 25rem;
           // background-color: $color-white;
@@ -563,6 +577,9 @@
     // top: -8rem;
     z-index: 100000;
     animation: mymove 0.4s ease-in-out;
+    @media only screen and (max-width: $bp-medium) {
+      animation: none;
+    }
     // overflow: hidden;
     @keyframes mymove {
       from {
@@ -665,6 +682,7 @@
       grid-template-columns: 24% 76%;
       @media only screen and (max-width: $bp-medium) {
         grid-template-columns: 1fr;
+        -webkit-user-drag: none;
       }
       align-content: center;
       // justify-content: center;
@@ -856,6 +874,10 @@
           text-decoration: none;
           color: $color-black;
           font-size: 2rem;
+          @media only screen and (max-width: $bp-small-1) {
+            font-size: 2.5rem;
+            // padding-top: 0.8rem;
+          }
         }
         a.navlinks {
           display: flex;
@@ -865,10 +887,13 @@
           border-top: 1px solid transparent;
           border-bottom: 1px solid transparent;
           transition: all 0.2s;
+
           // backface-visibility: hidden;
           // pointer-events: all;
           @media only screen and (max-width: $bp-small-1) {
-            transition: all 0.6s;
+            transition: all 0.4s;
+            border-top: none;
+            border-bottom: none;
           }
           svg {
             width: 2rem;
@@ -880,6 +905,13 @@
           padding: 0.4rem 1.2rem;
           color: $color-tertiary-light;
           background-color: $color-grey-light-2;
+          @media only screen and (max-width: $bp-small-1) {
+            padding: 0.4rem 1.6rem;
+            border-top: none;
+            border-bottom: none;
+            color: $color-black;
+            background-color: $color-grey-light-1;
+          }
           // transition: border 0.2s, padding 0.4s;
         }
         a.navlinks.active {
@@ -1282,6 +1314,11 @@ body.openModal2 .header__nav {
 
 @media only screen and (max-width: $bp-medium) {
   .hideNavbar {
+    display: none;
+  }
+}
+@media only screen and (max-width: $bp-small-1) {
+  .hideWhenSmall {
     display: none;
   }
 }

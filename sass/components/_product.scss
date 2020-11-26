@@ -91,9 +91,16 @@
     opacity: 1;
     pointer-events: initial;
     transform: translateX(0);
+    @media only screen and (max-width: $bp-medium) {
+      opacity: 0;
+      pointer-events: none;
+    }
   }
   &-img:hover img {
     filter: blur(0.3rem);
+    @media only screen and (max-width: $bp-medium) {
+      filter: none;
+    }
     // transform: scale(1.5);
   }
 
