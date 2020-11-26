@@ -182,6 +182,9 @@
 .slick-prev,
 .slick-next {
   z-index: 100 !important;
+  @media only screen and (max-width: $bp-largest) {
+    display: none !important;
+  }
 }
 .slick-prev:before,
 .slick-next:before {
