@@ -1,7 +1,10 @@
 .register {
   &__container {
-    width: 120rem;
+    max-width: 120rem;
     margin: 0 auto;
+    @media only screen and (max-width: $bp-small) {
+      text-align: center;
+    }
 
     h1 {
       text-align: center;
@@ -14,6 +17,12 @@
 }
 .form {
   width: 80rem;
+  @media only screen and (max-width: $bp-medium) {
+    width: 60rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    width: 36rem;
+  }
   margin: 0rem auto 3.2rem auto;
 
   a {
@@ -47,6 +56,10 @@
   &-group {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    @media only screen and (max-width: $bp-small) {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
   }
   &-radio {
     // display: flex;
@@ -89,6 +102,9 @@
       width: 50rem;
       padding: 1.2rem 1.6rem;
       background-color: $color-grey-light-2;
+      @media only screen and (max-width: $bp-small) {
+        width: 35rem;
+      }
     }
     input {
       border: 0.1rem solid $color-tertiary-light;
@@ -96,6 +112,12 @@
       box-shadow: 0 0 1.5rem 0.4rem rgba($color-tertiary-light, 0.06);
       padding: 1.2rem 1.6rem;
       width: 35rem;
+      @media only screen and (max-width: $bp-medium) {
+        width: 27rem;
+      }
+      @media only screen and (max-width: $bp-small-1) {
+        width: 35rem;
+      }
       background-color: $color-grey-light-2;
 
       //   outline: none;
@@ -134,3 +156,40 @@
     }
   }
 }
+.heightBottom {
+  height: calc(100vh - 55.5rem);
+  @media only screen and (max-width: $bp-medium) {
+    // display: none;
+  }
+}
+
+@media only screen and (max-width: $bp-small) {
+  .radioTwoLines {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    text-align: left;
+    // flex-direction: row;
+  }
+}
+.marginLeft {
+  margin-left: 0.5rem;
+}
+@media only screen and (max-width: $bp-small) {
+  .checkMobile {
+    font-size: 1.5rem;
+    // display: grid;
+    // grid-template-columns: 5% 58% 42%;
+    // text-align: left;
+    // flex-direction: row;
+  }
+}
+// @media only screen and (max-width: $bp-small-2) {
+//   .checkMobile {
+//     width: 36rem;
+//     font-size: 1.5rem;
+//     // display: grid;
+//     // grid-template-columns: 5% 58% 42%;
+//     // text-align: left;
+//     // flex-direction: row;
+//   }
+// }

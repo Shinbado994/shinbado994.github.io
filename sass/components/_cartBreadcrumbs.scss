@@ -1,5 +1,5 @@
 .cartBreadcrumbs {
-  width: 120rem;
+  max-width: 120rem;
   margin: 0 auto 3.2rem auto;
   h1 {
     text-align: center;
@@ -17,6 +17,17 @@
     list-style: none;
     display: inline-table;
     li {
+      span {
+        display: none;
+      }
+      @media only screen and (max-width: $bp-medlarge) {
+        font-size: 0rem;
+        span {
+          font-size: initial !important;
+          display: inline-block;
+        }
+      }
+
       user-select: none;
       display: inline;
 
@@ -28,6 +39,9 @@
 
       text-align: center;
       padding: 0.8rem 5rem 0 5rem;
+      @media only screen and (max-width: $bp-small-1) {
+        padding: 0.8rem 2rem 0 5rem;
+      }
       position: relative;
       margin: 0 1rem 0 0;
 
