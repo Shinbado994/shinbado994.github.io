@@ -23,10 +23,19 @@
     }
     display: flex;
     justify-content: space-between;
+    @media only screen and (max-width: $bp-large) {
+      justify-content: center;
+    }
   }
   &__container {
     max-width: 120rem;
     margin: 0 auto;
+    @media only screen and (max-width: $bp-large) {
+      padding: 0 1.2rem;
+    }
+    @media only screen and (max-width: $bp-small-1) {
+      padding: 0rem;
+    }
   }
   &__container.cart3 {
     max-width: 80rem;
@@ -45,6 +54,55 @@
 
 .productsTable {
   width: 120rem;
+  @media only screen and (max-width: $bp-largest) {
+    max-width: 120rem;
+    width: unset;
+    // padding: 1.2rem;
+  }
+  @media only screen and (max-width: $bp-large) {
+    .tableHideRB,
+    .hideHeading {
+      display: none;
+    }
+    .tableResponsive {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      justify-content: center;
+      align-items: center;
+      width: 80rem;
+      max-width: unset;
+    }
+    .tableImg {
+      grid-row-start: 1;
+      grid-row-end: 7;
+      // align-self: center;
+      img {
+        width: 20rem;
+        height: 20rem;
+      }
+    }
+  }
+  @media only screen and (max-width: $bp-medium) {
+    .tableResponsive {
+      width: 50rem;
+      grid-template-columns: 1fr;
+      border-bottom: 1px solid $color-grey-light-1;
+      margin-bottom: 1.2rem;
+    }
+    .tableImg {
+      // align-self: center;
+      img {
+        width: 20rem;
+        height: 20rem;
+      }
+    }
+  }
+  @media only screen and (max-width: $bp-small-1) {
+    .tableResponsive {
+      width: 40rem;
+      grid-template-columns: 1fr;
+    }
+  }
   margin-left: auto;
   margin-right: auto;
   border-collapse: separate;
@@ -84,6 +142,9 @@
     border-radius: 3px;
     padding: 1rem 2rem;
     text-align: center;
+    @media only screen and (max-width: $bp-small-1) {
+      padding: 1rem 1rem;
+    }
     img {
       width: 5rem;
       height: 5rem;
@@ -109,6 +170,12 @@
       opacity: 0.8;
       transition: all 0.3s;
       // vertical-align: 5rem;
+      @media only screen and (max-width: $bp-large) {
+        top: -1rem;
+        right: 0.4rem;
+        width: 2.6rem;
+        height: 2.6rem;
+      }
     }
     .removeFromCart:after {
       content: "";
@@ -120,6 +187,13 @@
       right: 1rem;
       // left: 1.1rem;
       // left: 28px;
+      @media only screen and (max-width: $bp-large) {
+        height: 2rem;
+        right: 1.1rem;
+      }
+      @media only screen and (max-width: $bp-small-1) {
+        right: 1.2rem;
+      }
     }
 
     .removeFromCart:before {
@@ -133,6 +207,13 @@
       top: 0.25rem;
       right: 1rem;
       // left: 1.1rem;
+      @media only screen and (max-width: $bp-large) {
+        height: 2rem;
+        right: 1.1rem;
+      }
+      @media only screen and (max-width: $bp-small-1) {
+        right: 1.2rem;
+      }
     }
     a.removeFromCart:hover {
       background-color: $color-tertiary-light;

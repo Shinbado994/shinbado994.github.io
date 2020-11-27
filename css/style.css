@@ -1930,10 +1930,19 @@ body.openModal2 .header__nav {
     display: flex;
     align-items: center;
     justify-content: center; }
+  @media only screen and (max-width: 62.5em) {
+    .cartArea__buttons {
+      justify-content: center; } }
 
 .cartArea__container {
   max-width: 120rem;
   margin: 0 auto; }
+  @media only screen and (max-width: 62.5em) {
+    .cartArea__container {
+      padding: 0 1.2rem; } }
+  @media only screen and (max-width: 34.5em) {
+    .cartArea__container {
+      padding: 0rem; } }
 
 .cartArea__container.cart3 {
   max-width: 80rem; }
@@ -1951,6 +1960,40 @@ body.openModal2 .header__nav {
   margin-right: auto;
   border-collapse: separate;
   margin-bottom: 2rem; }
+  @media only screen and (max-width: 77em) {
+    .productsTable {
+      max-width: 120rem;
+      width: unset; } }
+  @media only screen and (max-width: 62.5em) {
+    .productsTable .tableHideRB,
+    .productsTable .hideHeading {
+      display: none; }
+    .productsTable .tableResponsive {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      justify-content: center;
+      align-items: center;
+      width: 80rem;
+      max-width: unset; }
+    .productsTable .tableImg {
+      grid-row-start: 1;
+      grid-row-end: 7; }
+      .productsTable .tableImg img {
+        width: 20rem;
+        height: 20rem; } }
+  @media only screen and (max-width: 50em) {
+    .productsTable .tableResponsive {
+      width: 50rem;
+      grid-template-columns: 1fr;
+      border-bottom: 1px solid #e4e4e4;
+      margin-bottom: 1.2rem; }
+    .productsTable .tableImg img {
+      width: 20rem;
+      height: 20rem; } }
+  @media only screen and (max-width: 34.5em) {
+    .productsTable .tableResponsive {
+      width: 40rem;
+      grid-template-columns: 1fr; } }
   .productsTable-heading {
     background-color: #7f1f2c;
     border: none; }
@@ -1970,6 +2013,9 @@ body.openModal2 .header__nav {
     border-radius: 3px;
     padding: 1rem 2rem;
     text-align: center; }
+    @media only screen and (max-width: 34.5em) {
+      .productsTable td {
+        padding: 1rem 1rem; } }
     .productsTable td img {
       width: 5rem;
       height: 5rem; }
@@ -1991,6 +2037,12 @@ body.openModal2 .header__nav {
       text-align: center;
       opacity: 0.8;
       transition: all 0.3s; }
+      @media only screen and (max-width: 62.5em) {
+        .productsTable td .removeFromCart {
+          top: -1rem;
+          right: 0.4rem;
+          width: 2.6rem;
+          height: 2.6rem; } }
     .productsTable td .removeFromCart:after {
       content: "";
       height: 1.6rem;
@@ -1999,6 +2051,13 @@ body.openModal2 .header__nav {
       transform: rotate(45deg);
       top: 0.25rem;
       right: 1rem; }
+      @media only screen and (max-width: 62.5em) {
+        .productsTable td .removeFromCart:after {
+          height: 2rem;
+          right: 1.1rem; } }
+      @media only screen and (max-width: 34.5em) {
+        .productsTable td .removeFromCart:after {
+          right: 1.2rem; } }
     .productsTable td .removeFromCart:before {
       content: "";
       height: 1.6rem;
@@ -2007,6 +2066,13 @@ body.openModal2 .header__nav {
       transform: rotate(-45deg);
       top: 0.25rem;
       right: 1rem; }
+      @media only screen and (max-width: 62.5em) {
+        .productsTable td .removeFromCart:before {
+          height: 2rem;
+          right: 1.1rem; } }
+      @media only screen and (max-width: 34.5em) {
+        .productsTable td .removeFromCart:before {
+          right: 1.2rem; } }
     .productsTable td a.removeFromCart:hover {
       background-color: #7f1f2c;
       opacity: 1; }
@@ -2516,7 +2582,6 @@ input[type="number"]::-webkit-outer-spin-button {
     .modalInner {
       width: 100%; } }
   .modalInner img {
-    transform: translateY(-5rem);
     height: 75rem; }
     @media only screen and (max-width: 47em) {
       .modalInner img {
@@ -2531,7 +2596,7 @@ input[type="number"]::-webkit-outer-spin-button {
       .modalInner-left, .modalInner-right {
         width: 5rem;
         height: 5rem;
-        margin-top: -7.5rem; } }
+        margin-top: -2.5rem; } }
     .modalInner-left svg, .modalInner-right svg {
       fill: #7f1f2c;
       width: 10rem;
