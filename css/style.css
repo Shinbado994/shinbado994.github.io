@@ -523,9 +523,16 @@ body {
   margin-bottom: 0;
   display: flex;
   align-items: center; }
+  @media only screen and (max-width: 77em) {
+    .label-cbx {
+      user-select: none;
+      -webkit-tap-highlight-color: transparent; } }
 
 .label-cbx input:checked + .checkbox {
   border-color: #7f1f2c; }
+  @media only screen and (max-width: 77em) {
+    .label-cbx input:checked + .checkbox {
+      border-color: transparent; } }
 
 .label-cbx input:checked + .checkbox svg path {
   fill: #7f1f2c; }
@@ -558,6 +565,11 @@ body {
   stroke-dasharray: 69px;
   stroke-dashoffset: 69px;
   transition: all 0.6s ease; }
+  @media only screen and (max-width: 77em) {
+    .label-cbx .checkbox svg path {
+      stroke: transparent;
+      overflow: auto;
+      white-space: nowrap; } }
 
 .label-cbx .checkbox svg polyline {
   fill: none;
@@ -1725,13 +1737,32 @@ body.openModal2 .header__nav {
     .breadcrumbs__container a:after {
       content: "/"; }
 
+@media only screen and (max-width: 77em) {
+  .filterStuff {
+    text-align: center; } }
+
 .categoryProducts__container {
   padding-top: 2rem;
-  width: 120rem;
+  max-width: 120rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 22% 75%;
   column-gap: 3%; }
+  @media only screen and (max-width: 77em) {
+    .categoryProducts__container {
+      grid-template-columns: 1fr;
+      row-gap: 2.4rem;
+      padding: 1.2rem; } }
+
+@media only screen and (max-width: 77em) {
+  .categoryProducts__filters {
+    width: 50rem;
+    margin: 0rem auto 4rem auto;
+    justify-self: center; } }
+
+@media only screen and (max-width: 34.5em) {
+  .categoryProducts__filters {
+    width: 36rem; } }
 
 .categoryProducts__filters fieldset {
   padding: 0.8rem;
@@ -1761,6 +1792,12 @@ body.openModal2 .header__nav {
     grid-template-columns: repeat(3, 33%);
     row-gap: 1.8rem;
     justify-items: center; }
+    @media only screen and (max-width: 56.25em) {
+      .categoryProducts__products-grid {
+        grid-template-columns: repeat(2, 50%); } }
+    @media only screen and (max-width: 34.5em) {
+      .categoryProducts__products-grid {
+        grid-template-columns: 1fr; } }
     .categoryProducts__products-grid .product {
       margin: 0;
       text-align: center;
@@ -1783,6 +1820,40 @@ body.openModal2 .header__nav {
       box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.134), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.1);
       color: #fefefe;
       margin-bottom: 0.4rem; }
+
+input[name="tab-1"] {
+  display: none; }
+
+.checkFilter {
+  display: none;
+  padding: 1rem;
+  background-color: #eee;
+  border-bottom: 1px solid rgba(238, 238, 238, 0.15);
+  font-size: 2rem;
+  color: #7f1f2c;
+  cursor: pointer;
+  transition: all 0.4s;
+  margin-bottom: 0.8rem; }
+
+@media only screen and (max-width: 77em) {
+  .filterResponsive {
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s; }
+    .filterResponsive fieldset {
+      opacity: 0;
+      height: 0;
+      margin-bottom: -3rem; }
+  .checkFilter {
+    display: block; } }
+
+input[name="tab-1"]:checked ~ .filterResponsive {
+  opacity: 1;
+  pointer-events: all; }
+  input[name="tab-1"]:checked ~ .filterResponsive fieldset {
+    opacity: 1;
+    height: initial;
+    margin-bottom: 2.4rem; }
 
 .register__container {
   max-width: 120rem;

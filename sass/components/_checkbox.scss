@@ -8,11 +8,19 @@
   display: flex;
   align-items: center;
   //   height: 5rem;
+  @media only screen and (max-width: $bp-largest) {
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
 }
 
 .label-cbx input:checked + .checkbox {
   //   border-color: #20c2e0;
   border-color: $color-tertiary-light;
+  // border-color: transparent;
+  @media only screen and (max-width: $bp-largest) {
+    border-color: transparent;
+  }
 }
 
 .label-cbx input:checked + .checkbox svg path {
@@ -57,6 +65,12 @@
   stroke-dasharray: 69px;
   stroke-dashoffset: 69px;
   transition: all 0.6s ease;
+
+  @media only screen and (max-width: $bp-largest) {
+    stroke: transparent;
+    overflow: auto;
+    white-space: nowrap;
+  }
 }
 
 .label-cbx .checkbox svg polyline {

@@ -47,16 +47,35 @@
   }
 }
 
+.filterStuff {
+  @media only screen and (max-width: $bp-largest) {
+    text-align: center;
+  }
+}
+
 .categoryProducts {
   &__container {
     padding-top: 2rem;
-    width: 120rem;
+    max-width: 120rem;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 22% 75%;
     column-gap: 3%;
+    @media only screen and (max-width: $bp-largest) {
+      grid-template-columns: 1fr;
+      row-gap: 2.4rem;
+      padding: 1.2rem;
+    }
   }
   &__filters {
+    @media only screen and (max-width: $bp-largest) {
+      width: 50rem;
+      margin: 0rem auto 4rem auto;
+      justify-self: center;
+    }
+    @media only screen and (max-width: $bp-small-1) {
+      width: 36rem;
+    }
     // background-color: blue;
     fieldset {
       // background-color: #ccc;
@@ -95,6 +114,12 @@
     &-grid {
       display: grid;
       grid-template-columns: repeat(3, 33%);
+      @media only screen and (max-width: $bp-medlarge) {
+        grid-template-columns: repeat(2, 50%);
+      }
+      @media only screen and (max-width: $bp-small-1) {
+        grid-template-columns: 1fr;
+      }
       row-gap: 1.8rem;
       //   align-content: center;
       justify-items: center;
@@ -130,3 +155,92 @@
     }
   }
 }
+
+input[name="tab-1"] {
+  display: none;
+}
+
+.checkFilter {
+  display: none;
+  padding: 1rem;
+  background-color: $color-grey-light-2;
+
+  border-bottom: 1px solid rgba($color-grey-light-2, 0.15);
+
+  font-size: 2rem;
+
+  color: $color-tertiary-light;
+  cursor: pointer;
+  transition: all 0.4s;
+  margin-bottom: 0.8rem;
+
+  // &:after {
+  //   content: "+";
+  //   position: absolute;
+  //   right: 1em;
+  //   width: 1em;
+  //   height: 1em;
+  //   color: $color-grey-light-1;
+  //   text-align: center;
+  //   border-radius: 50%;
+  //   background: $color-black;
+  //   box-shadow: inset 0 1px 6px rgba(#000, 0.5), 0 1px 0 #fff;
+  //   text-shadow: 0 1px 0 rgba(#000, 0.75);
+  // }
+
+  // &:hover {
+  //   color: $color-black;
+  // }
+}
+
+// input:checked + label {
+//   color: $color-black;
+
+//   &:after {
+//     content: "-";
+//     /* adjsut line-height to vertically center icon */
+//     line-height: 0.8em;
+//   }
+// }
+@media only screen and (max-width: $bp-largest) {
+  .filterResponsive {
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    fieldset {
+      opacity: 0;
+      height: 0;
+      margin-bottom: -3rem;
+    }
+  }
+  .checkFilter {
+    display: block;
+  }
+}
+// .filterResponsive {
+//   opacity: 0;
+//   pointer-events: none;
+//   transition: all 0.3s;
+//   fieldset {
+//     opacity: 0;
+//     height: 0;
+//     margin-bottom: -3rem;
+//   }
+// }
+input[name="tab-1"]:checked ~ .filterResponsive {
+  opacity: 1;
+  pointer-events: all;
+  fieldset {
+    opacity: 1;
+    height: initial;
+    margin-bottom: 2.4rem;
+  }
+}
+
+// input[name="tab-1"]:checked ~ .filterResponsive {
+//   height: 200px;
+// }
+
+// input[name="tab1"]:checked ~ .accordion__content.accordion__content--large {
+//   height: 300px;
+// }
