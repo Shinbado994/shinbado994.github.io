@@ -1,10 +1,13 @@
 .slides {
   width: 100%;
-  min-height: 50rem;
+  // min-height: 50rem;
   // border: 2px solid black;
   position: relative;
   margin: 0 auto;
   overflow: hidden;
+}
+.hideWhileNotDone {
+  display: none;
 }
 .slide {
   position: absolute;
@@ -17,7 +20,7 @@
 
 .backgroundimage {
   width: 100%;
-  min-height: 50rem;
+  // min-height: 50rem;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;

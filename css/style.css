@@ -110,10 +110,12 @@ body {
 
 .slides {
   width: 100%;
-  min-height: 50rem;
   position: relative;
   margin: 0 auto;
   overflow: hidden; }
+
+.hideWhileNotDone {
+  display: none; }
 
 .slide {
   position: absolute;
@@ -125,7 +127,6 @@ body {
 
 .backgroundimage {
   width: 100%;
-  min-height: 50rem;
   background-position: center;
   /* Center the image */
   background-repeat: no-repeat;
