@@ -168,11 +168,12 @@ input[name="tab-1"] {
   border-bottom: 1px solid rgba($color-grey-light-2, 0.15);
 
   font-size: 2rem;
-
+  width: 16rem;
+  text-align: center;
   color: $color-tertiary-light;
   cursor: pointer;
   transition: all 0.4s;
-  margin-bottom: 0.8rem;
+  margin: 0 auto 0.8rem auto;
 
   // &:after {
   //   content: "+";
@@ -214,7 +215,7 @@ input[name="tab-1"] {
     }
   }
   .checkFilter {
-    display: block;
+    display: inline-block;
   }
 }
 // .filterResponsive {
@@ -244,3 +245,35 @@ input[name="tab-1"]:checked ~ .filterResponsive {
 // input[name="tab1"]:checked ~ .accordion__content.accordion__content--large {
 //   height: 300px;
 // }
+.showMobileSelect {
+  display: none;
+  @media only screen and (max-width: $bp-largest) {
+    display: inline-block;
+    .select-selected {
+      padding: 1.17rem 0 1.17rem 0;
+      font-size: 2rem;
+      text-align: center;
+      border-bottom: none;
+    }
+    .select-selected:after {
+      top: 2.4rem;
+    }
+
+    /*point the arrow upwards when the select box is open (active):*/
+    .select-selected.select-arrow-active:after {
+      top: 1.6rem;
+    }
+    .select-items div {
+      padding: 1.17rem 0 1.17rem 0;
+      font-size: 1.8rem;
+    }
+  }
+}
+@media only screen and (max-width: $bp-largest) {
+  .hideMobileSelect {
+    display: none;
+  }
+  .filterResponsiveContainer {
+    text-align: center;
+  }
+}
