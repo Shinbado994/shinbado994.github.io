@@ -20,7 +20,7 @@
 .select-selected:after {
   position: absolute;
   content: "";
-  top: 1.6rem;
+  top: 1.2rem;
   right: 1rem;
   width: 0;
   height: 0;
@@ -32,7 +32,7 @@
 /*point the arrow upwards when the select box is open (active):*/
 .select-selected.select-arrow-active:after {
   border-color: transparent transparent $color-tertiary-light transparent;
-  top: 0.7rem;
+  top: 0.4rem;
 }
 
 /*style the items (options), including the selected item:*/

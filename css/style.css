@@ -603,7 +603,7 @@ body {
 .select-selected:after {
   position: absolute;
   content: "";
-  top: 1.6rem;
+  top: 1.2rem;
   right: 1rem;
   width: 0;
   height: 0;
@@ -613,7 +613,7 @@ body {
 /*point the arrow upwards when the select box is open (active):*/
 .select-selected.select-arrow-active:after {
   border-color: transparent transparent #7f1f2c transparent;
-  top: 0.7rem; }
+  top: 0.4rem; }
 
 /*style the items (options), including the selected item:*/
 .select-items div,
@@ -2137,10 +2137,22 @@ input[type="number"]::-webkit-outer-spin-button {
 .singleProduct .header__slider-left {
   left: 8rem;
   z-index: 1000; }
+  @media only screen and (max-width: 50em) {
+    .singleProduct .header__slider-left {
+      left: 3rem;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent; } }
 
 .singleProduct .header__slider-right {
   right: 2rem;
   z-index: 1000; }
+  @media only screen and (max-width: 50em) {
+    .singleProduct .header__slider-right {
+      right: -2rem;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent; }
+      .singleProduct .header__slider-right .goToNext {
+        user-select: none; } }
 
 .singleProduct__container {
   max-width: 120rem;
@@ -2260,6 +2272,9 @@ input[type="number"]::-webkit-outer-spin-button {
   border-spacing: 0rem;
   margin-bottom: 1.2rem;
   margin-top: 2.4rem; }
+  @media only screen and (max-width: 50em) {
+    .singleProduct h1 {
+      margin-bottom: 1.8rem; } }
 
 .singleProduct-price {
   font-family: "Blinker", sans-serif;
@@ -2275,7 +2290,7 @@ input[type="number"]::-webkit-outer-spin-button {
     height: 2px;
     background: #7f1f2c;
     position: absolute;
-    bottom: 1.2rem;
+    bottom: 1rem;
     left: 0; }
 
 .singleProduct-code {
@@ -2432,7 +2447,9 @@ input[type="number"]::-webkit-outer-spin-button {
       left: -8.5rem; } }
   @media only screen and (max-width: 50em) {
     .slideThumbs {
-      left: -7.5rem; } }
+      left: -7.5rem;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent; } }
   @media only screen and (max-width: 37.5em) {
     .slideThumbs {
       left: -6.5rem; } }
@@ -2457,7 +2474,9 @@ input[type="number"]::-webkit-outer-spin-button {
     @media only screen and (max-width: 50em) {
       .slideThumbs img {
         width: 7rem;
-        height: 7rem; } }
+        height: 7rem;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent; } }
     @media only screen and (max-width: 37.5em) {
       .slideThumbs img {
         width: 6rem;

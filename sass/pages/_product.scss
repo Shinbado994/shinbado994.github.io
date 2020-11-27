@@ -7,10 +7,23 @@
   .header__slider-left {
     left: 8rem;
     z-index: 1000;
+    @media only screen and (max-width: $bp-medium) {
+      left: 3rem;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+    }
   }
   .header__slider-right {
     right: 2rem;
     z-index: 1000;
+    @media only screen and (max-width: $bp-medium) {
+      right: -2rem;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      .goToNext {
+        user-select: none;
+      }
+    }
   }
   &__container {
     max-width: 120rem;
@@ -167,6 +180,9 @@
     // text-align: center;
     margin-bottom: 1.2rem;
     margin-top: 2.4rem;
+    @media only screen and (max-width: $bp-medium) {
+      margin-bottom: 1.8rem;
+    }
   }
   &-price {
     font-family: $font-heading;
@@ -185,8 +201,11 @@
       height: 2px;
       background: $color-tertiary-light;
       position: absolute;
-      bottom: 1.2rem;
+      bottom: 1rem;
       left: 0;
+      // @media only screen and (max-width: $bp-medium-2) {
+      //   bottom: 1.2rem;
+      // }
     }
   }
   &-code {
@@ -413,6 +432,8 @@
   }
   @media only screen and (max-width: $bp-medium) {
     left: -7.5rem;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
   }
   @media only screen and (max-width: $bp-small) {
     left: -6.5rem;
@@ -439,7 +460,10 @@
     @media only screen and (max-width: $bp-medium) {
       width: 7rem;
       height: 7rem;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
     }
+
     @media only screen and (max-width: $bp-small) {
       width: 6rem;
       height: 6rem;
