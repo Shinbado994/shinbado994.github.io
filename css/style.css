@@ -2016,8 +2016,7 @@ input[name="tab-1"]:checked ~ .filterResponsive {
   display: flex;
   justify-content: space-between; }
   .cartArea__buttons-hide {
-    opacity: 0;
-    pointer-events: none; }
+    display: none !important; }
   .cartArea__buttons a {
     text-decoration: none;
     padding: 0.8rem 1.2rem;
@@ -2034,7 +2033,8 @@ input[name="tab-1"]:checked ~ .filterResponsive {
     justify-content: center; }
   @media only screen and (max-width: 62.5em) {
     .cartArea__buttons {
-      justify-content: center; } }
+      justify-content: center;
+      margin-right: 1.2rem; } }
 
 .cartArea__container {
   max-width: 120rem;
