@@ -99,9 +99,12 @@
     textarea {
       border: 0.1rem solid $color-tertiary-light;
       box-shadow: 0 0 1.5rem 0.4rem rgba($color-tertiary-light, 0.06);
-      width: 50rem;
+      width: 75rem;
       padding: 1.2rem 1.6rem;
       background-color: $color-grey-light-2;
+      @media only screen and (max-width: $bp-largest) {
+        width: 50rem;
+      }
       @media only screen and (max-width: $bp-small) {
         width: 35rem;
       }

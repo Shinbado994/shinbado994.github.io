@@ -1759,6 +1759,18 @@ body.openModal2 .header__nav {
       row-gap: 2.4rem;
       padding: 1.2rem; } }
 
+.categoryProducts__container1 {
+  padding-top: 2rem;
+  max-width: 120rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr; }
+  @media only screen and (max-width: 77em) {
+    .categoryProducts__container1 {
+      grid-template-columns: 1fr;
+      row-gap: 2.4rem;
+      padding: 1.2rem; } }
+
 @media only screen and (max-width: 77em) {
   .categoryProducts__filters {
     width: 50rem;
@@ -1825,6 +1837,38 @@ body.openModal2 .header__nav {
       box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.134), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.1);
       color: #fefefe;
       margin-bottom: 0.4rem; }
+
+.categoryProducts__favorites {
+  transform: translateY(-2rem); }
+  .categoryProducts__favorites-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.2rem;
+    margin-right: 2rem; }
+    .categoryProducts__favorites-top p {
+      font-size: 1.5rem; }
+  .categoryProducts__favorites-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    row-gap: 1.8rem;
+    justify-items: center; }
+    @media only screen and (max-width: 77em) {
+      .categoryProducts__favorites-grid {
+        grid-template-columns: repeat(3, 33%); } }
+    @media only screen and (max-width: 56.25em) {
+      .categoryProducts__favorites-grid {
+        grid-template-columns: repeat(2, 50%); } }
+    @media only screen and (max-width: 34.5em) {
+      .categoryProducts__favorites-grid {
+        grid-template-columns: 1fr; } }
+    .categoryProducts__favorites-grid .product {
+      margin: 0;
+      text-align: center;
+      width: 27rem; }
+      .categoryProducts__favorites-grid .product img {
+        width: 25rem;
+        height: auto; }
 
 input[name="tab-1"] {
   display: none; }
@@ -1956,9 +2000,12 @@ input[name="tab-1"]:checked ~ .filterResponsive {
     .form-item textarea {
       border: 0.1rem solid #7f1f2c;
       box-shadow: 0 0 1.5rem 0.4rem rgba(127, 31, 44, 0.06);
-      width: 50rem;
+      width: 75rem;
       padding: 1.2rem 1.6rem;
       background-color: #eee; }
+      @media only screen and (max-width: 77em) {
+        .form-item textarea {
+          width: 50rem; } }
       @media only screen and (max-width: 37.5em) {
         .form-item textarea {
           width: 35rem; } }
