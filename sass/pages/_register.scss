@@ -14,6 +14,58 @@
       margin-bottom: 1.6rem;
     }
   }
+
+  &__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80rem;
+    margin: 2.4rem auto 1.2rem auto;
+    @media only screen and (max-width: $bp-medium) {
+      width: 60rem;
+      grid-template-columns: 1fr;
+    }
+    @media only screen and (max-width: $bp-small) {
+      width: 36rem;
+      text-align: left;
+    }
+    &-left {
+      svg {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 1.2rem;
+        fill: $color-tertiary-light;
+        @media only screen and (max-width: $bp-medium) {
+          margin-right: 0.8rem;
+        }
+      }
+      @media only screen and (max-width: $bp-medium) {
+        width: 30rem;
+        margin: 0 auto;
+      }
+    }
+    &-right {
+      b {
+        color: $color-tertiary-light;
+      }
+      ul {
+        list-style-type: none;
+      }
+      li {
+        margin-bottom: 0.2rem;
+        @media only screen and (max-width: $bp-medium) {
+          margin-bottom: 1.2rem;
+        }
+      }
+      @media only screen and (max-width: $bp-medium) {
+        width: 30rem;
+        margin: 0 auto;
+      }
+    }
+    &-phone {
+      display: flex;
+      margin-bottom: 1.2rem;
+    }
+  }
 }
 .form {
   width: 80rem;

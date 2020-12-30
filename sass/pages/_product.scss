@@ -1,3 +1,24 @@
+.someinfo {
+  &__container {
+    max-width: 120rem;
+    margin: 2.4rem auto 3.2rem auto;
+    background-color: $color-grey-light-1;
+    box-shadow: 0rem 0.3rem 0.7rem rgba($color-black, 0.16);
+    padding: 0.4rem;
+    border: 1px solid $color-grey-light-1;
+    @media only screen and (max-width: $bp-largest) {
+      max-width: 70rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      width: 50rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      width: 40rem;
+      text-align: center;
+    }
+  }
+}
+
 .singleProduct {
   @media only screen and (max-width: $bp-large) {
     .header__slider {
