@@ -101,7 +101,7 @@ function Slider(slider, intTime) {
   // console.log(document.querySelector('.slider'));
   if(document.querySelector('.slider') !== null
   ){
-    const mySlider = new Slider(document.querySelector('.slider'),10000);
+    const mySlider = new Slider(document.querySelector('.slider'),10000000);
   }
   if(document.querySelector('.sliderProduct') !== null
   ){
