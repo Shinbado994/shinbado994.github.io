@@ -6,8 +6,72 @@
   margin: 0 auto;
   overflow: hidden;
 }
+
+// .hideSliderImage {
+//   @media only screen and (max-width: $bp-small) {
+//     // display: none;
+//     display: none;
+//   }
+// }
+
+// .showSliderImage {
+//   display: none;
+//   @media only screen and (max-width: $bp-small) {
+//     // display: none;
+//     display: block;
+//   }
+// }
+
 .slidesHeight {
   height: 45rem;
+  @media only screen and (min-width: 90em) {
+    // display: none;
+    height: 49rem;
+  }
+  @media only screen and (min-width: 100em) {
+    // display: none;
+    height: 53rem;
+  }
+  @media only screen and (min-width: 110em) {
+    // display: none;
+    height: 57rem;
+  }
+  @media only screen and (min-width: 120em) {
+    // display: none;
+    height: 61rem;
+  }
+  @media only screen and (max-width: $bp-medlargest) {
+    // display: none;
+    height: 40rem;
+  }
+  @media only screen and (max-width: $bp-large) {
+    // display: none;
+    height: 35rem;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    // display: none;
+    height: 28rem;
+  }
+  @media only screen and (max-width: $bp-medium-2) {
+    // display: none;
+    height: 24rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    // display: none;
+    height: 20rem;
+  }
+  @media only screen and (max-width: $bp-small-1) {
+    // display: none;
+    height: 18rem;
+  }
+  @media only screen and (max-width: $bp-small-2) {
+    // display: none;
+    height: 13rem;
+  }
+  @media only screen and (max-width: $bp-small-3) {
+    // display: none;
+    height: 13rem;
+  }
 }
 .hideWhileNotDone {
   display: none;

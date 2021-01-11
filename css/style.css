@@ -116,6 +116,42 @@ body {
 
 .slidesHeight {
   height: 45rem; }
+  @media only screen and (min-width: 90em) {
+    .slidesHeight {
+      height: 49rem; } }
+  @media only screen and (min-width: 100em) {
+    .slidesHeight {
+      height: 53rem; } }
+  @media only screen and (min-width: 110em) {
+    .slidesHeight {
+      height: 57rem; } }
+  @media only screen and (min-width: 120em) {
+    .slidesHeight {
+      height: 61rem; } }
+  @media only screen and (max-width: 68.75em) {
+    .slidesHeight {
+      height: 40rem; } }
+  @media only screen and (max-width: 62.5em) {
+    .slidesHeight {
+      height: 35rem; } }
+  @media only screen and (max-width: 50em) {
+    .slidesHeight {
+      height: 28rem; } }
+  @media only screen and (max-width: 47em) {
+    .slidesHeight {
+      height: 24rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .slidesHeight {
+      height: 20rem; } }
+  @media only screen and (max-width: 34.5em) {
+    .slidesHeight {
+      height: 18rem; } }
+  @media only screen and (max-width: 28em) {
+    .slidesHeight {
+      height: 13rem; } }
+  @media only screen and (max-width: 24em) {
+    .slidesHeight {
+      height: 13rem; } }
 
 .hideWhileNotDone {
   display: none; }
@@ -250,7 +286,7 @@ body {
       outline: none; }
     .product-img img {
       width: 23rem;
-      height: 21rem;
+      height: 23rem;
       transition: all 0.3s;
       margin: 0 auto; }
     .product-img .btnMore {
@@ -1479,30 +1515,6 @@ body {
   width: 100%;
   height: 100%;
   position: relative; }
-  @media only screen and (max-width: 68.75em) {
-    .header__slider {
-      height: 40rem; } }
-  @media only screen and (max-width: 62.5em) {
-    .header__slider {
-      height: 35rem; } }
-  @media only screen and (max-width: 50em) {
-    .header__slider {
-      height: 28rem; } }
-  @media only screen and (max-width: 47em) {
-    .header__slider {
-      height: 24rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .header__slider {
-      height: 20rem; } }
-  @media only screen and (max-width: 34.5em) {
-    .header__slider {
-      height: 18rem; } }
-  @media only screen and (max-width: 28em) {
-    .header__slider {
-      height: 13rem; } }
-  @media only screen and (max-width: 24em) {
-    .header__slider {
-      height: 13rem; } }
   .header__slider svg {
     width: 5rem;
     height: 5rem; }
@@ -1889,7 +1901,8 @@ body.openModal2 .header__nav {
       width: 27rem; }
       .categoryProducts__favorites-grid .product img {
         width: 25rem;
-        height: auto; }
+        height: auto;
+        display: block; }
 
 input[name="tab-1"] {
   display: none; }
