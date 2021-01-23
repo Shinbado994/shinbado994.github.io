@@ -570,6 +570,9 @@
     @media only screen and (max-width: $bp-medium) {
       display: none;
     }
+    @media only screen and (max-width: $bp-small-2) {
+      display: block;
+    }
     width: 100%;
     height: 8rem;
     position: fixed;
@@ -579,6 +582,10 @@
     animation: mymove 0.4s ease-in-out;
     @media only screen and (max-width: $bp-medium) {
       animation: none;
+    }
+    @media only screen and (max-width: $bp-small-2) {
+      animation: initial;
+      height: 12rem;
     }
     // overflow: hidden;
     @keyframes mymove {
@@ -593,6 +600,14 @@
   &__top.fixed {
     @media only screen and (max-width: $bp-medium) {
       display: none;
+    }
+    @media only screen and (max-width: $bp-small-2) {
+      display: grid;
+
+      grid-template-columns: 50% 50%;
+      grid-template-rows: repeat(2, 1fr);
+      height: 12rem;
+      row-gap: 0.4rem;
     }
     opacity: 1;
     // overflow: hidden;
@@ -613,12 +628,21 @@
       right: auto;
       left: -2.5rem;
       top: 4.8rem;
+      @media only screen and (max-width: $bp-small-2) {
+        left: -1.2rem;
+        top: 3.4rem;
+      }
       // opacity: 0;
     }
 
     .logoImg {
       margin-top: 1.9rem;
       width: 26rem;
+      @media only screen and (max-width: $bp-small-2) {
+        width: 20rem;
+        margin-top: 0;
+        transform: translateY(0rem);
+      }
       transform: translateY(-0.8rem);
     }
     .cart,
@@ -627,6 +651,10 @@
       svg {
         width: 3.4rem;
         height: 3.4rem;
+        @media only screen and (max-width: $bp-small-2) {
+          width: 3rem;
+          height: 3rem;
+        }
       }
     }
     .cart span {
@@ -866,6 +894,11 @@
           width: 28.8rem;
           @media only screen and (max-width: $bp-small-1) {
             width: 100vw;
+          }
+          @media only screen and (max-width: $bp-small-1) {
+            ul {
+              width: 92vw;
+            }
           }
         }
         //menjaza
